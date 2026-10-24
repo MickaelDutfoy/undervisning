@@ -146,12 +146,20 @@ th {
 
 @page {
   size: A4;
-  margin: var(--page-margin-y) var(--page-margin-x);
+  margin: 16mm 18mm;
 }
 
 @media print {
+  html,
   body {
+    margin: 0;
+    padding: 0;
     background: white;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .course {
