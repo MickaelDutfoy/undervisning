@@ -36,6 +36,191 @@
       <section>
         <h2>
           <span class="section-number">1.</span>
+          <u>Førstegradslikninger</u>
+        </h2>
+
+        <div class="definition">
+          <p>
+            Å løse en likning betyr å finne verdien en bokstav må ha i et
+            uttrykk for at likheten skal være riktig.
+          </p>
+        </div>
+
+        <section class="example">
+          <p>
+            \(x + 12 = 22\) er en likning med den ukjente \(x\). Det er egentlig
+            bare en enkel addisjon med et manglende tall:
+            \(\ldots + 12 = 22\), som vi kan finne ved å regne
+            \(22 - 12 = 10\). Løsningen er derfor \(x = 10\).
+          </p>
+        </section>
+
+        <div class="method">
+          <p>
+            For å løse en likning utfører vi de samme regneoperasjonene på
+            begge sider av \(=\)-tegnet helt til den ukjente står alene.
+          </p>
+        </div>
+
+        <section class="example">
+          <p>Vi har likningen \(x + 6 = -22\).</p>
+          <p>
+            For å få \(x\) alene må vi fjerne \(+6\), altså trekke fra 6.
+          </p>
+          <p>
+            Da får vi \(x + 6 \textcolor{red}{-6} = -22 \textcolor{red}{-6}\).
+          </p>
+          <p>Når vi regner ut, får vi \(x = -28\).</p>
+        </section>
+
+        <div class="remark">
+          <p>
+            Divisjon og multiplikasjon opphever hverandre, akkurat som addisjon
+            og subtraksjon.
+          </p>
+        </div>
+
+        <section class="example">
+          <p>Vi har likningen \(\dfrac{y}{6} = 11\).</p>
+          <p>
+            Divisjonen med 6 oppheves ved å gange med 6, altså \(\dfrac{y}{6}
+            \textcolor{red}{\cdot 6} = 11 \textcolor{red}{\cdot 6}\).
+          </p>
+          <p>Dermed får vi \(y = 66\).</p>
+        </section>
+
+        <section class="example">
+          <p>Vi har likningen \(-3x = 21\).</p>
+          <p>
+            \(-3x\) betyr \(x \cdot (-3)\), så vi må dele på \(-3\) på begge
+            sider:
+            \( \textcolor{red}{\dfrac{\textcolor{black}{-3x}}{-3}}
+            \textcolor{black}{=}
+            \textcolor{red}{\dfrac{\textcolor{black}{21}}{-3}} \),
+            og dermed får vi \(x = -7\).
+          </p>
+        </section>
+
+        <div class="remark">
+          <p>
+            En regneoperasjon gjelder hele linjen. Pass derfor på
+            regnerekkefølgen, og velg operasjonene som gjør at den ukjente
+            blir stående alene.
+          </p>
+        </div>
+
+        <section class="example">
+          <p>Vi vil løse \(3a - 22 = -10\).</p>
+          <p>
+            Vi må legge til 22 og dele på 3. Hvis vi begynner med divisjonen,
+            får vi \( \textcolor{red}{\dfrac{\textcolor{black}{3a
+            - 22}}{3}} \textcolor{black}{=}
+            \textcolor{red}{\dfrac{\textcolor{black}{-10}}{3}} \), som blir
+            tungvint å arbeide videre med på grunn av brøkene.
+          </p>
+
+          <p>
+            Hvis vi begynner med addisjonen, får vi \(3a - 22
+            \textcolor{red}{+ 22} = -10 \textcolor{red}{+ 22}\), altså
+            \(3a = 12\). Til slutt får vi \(
+            \textcolor{red}{\dfrac{\textcolor{black}{3a}}{3}}
+            \textcolor{black}{=}
+            \textcolor{red}{\dfrac{\textcolor{black}{12}}{3}} \), og dermed
+            \(a = 4\).
+          </p>
+        </section>
+
+        <section class="example">
+          <p>Vi vil løse \(\dfrac{x}{2} + 5 = 11\).</p>
+
+          <div class="table-wrap">
+            <table aria-label="Sammenligning av to løsningsmetoder">
+              <thead>
+                <tr>
+                  <th>1. metode</th>
+                  <th>2. metode</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    \(\dfrac{x}{2} + 5 \textcolor{red}{- 5} = 11
+                    \textcolor{red}{- 5}\)
+                  </td>
+                  <td>
+                    \((\dfrac{x}{2} + 5) \textcolor{red}{\cdot 2} = 11
+                    \textcolor{red}{\cdot 2}\)
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>\(\dfrac{x}{2} = 6\)</td>
+                  <td>\(x + 10 = 22\) (ved hjelp av distribusjon)</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    \(\dfrac{x}{2} \textcolor{red}{\cdot 2} = 6
+                    \textcolor{red}{\cdot 2}\)
+                  </td>
+                  <td>
+                    \(x + 10 \textcolor{red}{- 10} = 22 \textcolor{red}{- 10}\)
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>\(x = 12\)</td>
+                  <td>\(x = 12\)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Den første metoden virker enklere. Vi kan derfor huske denne
+            generelle ideen: gå motsatt vei av den vanlige regnerekkefølgen.
+          </p>
+        </section>
+
+        <div class="remark">
+          <p>
+            Hvis den ukjente finnes på begge sider, gjør vi først en operasjon
+            for å samle den på én side.
+          </p>
+        </div>
+
+        <section class="example">
+          <p>Vi har likningen \(2x = 5x + 12\).</p>
+          <p>
+            For å samle \(x\)-leddene på venstre side vil vi bli kvitt
+            \(+5x\) på høyre side. Derfor trekker vi fra \(5x\) på begge sider:
+            \(2x \textcolor{red}{- 5x} = 5x + 12 \textcolor{red}{- 5x}\).
+            Da får vi \(-3x = 12\), og til slutt \(x = -4\) ved å dele på
+            \(\textcolor{red}{-3}\).
+          </p>
+        </section>
+
+        <section class="example">
+          <p>Vi har likningen \(-3x + 7 = -7x - 11\).</p>
+          <p>
+            La oss være ærlige: uten en metode ville det vært veldig vanskelig
+            å «gjette» \(x\) her. Derfor bruker vi metoden:
+          </p>
+
+          <div class="math-display">
+            $$ \begin{aligned} -3x + 7 &= -7x - 11 \\ -3x + 7 \textcolor{red}{+
+            7x} &= -7x - 11 \textcolor{red}{+ 7x} \\ 4x + 7 &= -11 \\ 4x + 7
+            \textcolor{red}{- 7} &= -11 \textcolor{red}{- 7} \\ 4x &= -18 \\
+            \textcolor{red}{\dfrac{\textcolor{black}{4x}}{4}} &=
+            \textcolor{red}{\dfrac{\textcolor{black}{-18}}{4}} \\ x &=
+            \dfrac{-18}{4} = -4{,}5 \end{aligned} $$
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">2.</span>
           <u>Kryssmultiplikasjon</u>
         </h2>
 
@@ -95,90 +280,92 @@
           </p>
         </div>
 
-        <section class="example">
-          <p>Vi vil gjøre om 23 kg til tonn. Vi vet at 1 tonn = 1000 kg.</p>
+<section class="example">
+  <p>Vi vil gjøre om 23 kg til tonn. Vi vet at 1 tonn = 1000 kg.</p>
 
-          <div class="table-wrap">
-            <table aria-label="Omregning fra kilogram til tonn">
-              <tbody>
-                <tr>
-                  <th>tonn</th>
-                  <td>1</td>
-                  <td>\(x\)</td>
-                </tr>
-                <tr>
-                  <th>kg</th>
-                  <td>1000</td>
-                  <td>23</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+  <div class="table-wrap">
+    <table aria-label="Omregning fra kilogram til tonn">
+      <tbody>
+        <tr>
+          <th>tonn</th>
+          <td>1</td>
+          <td>\(x\)</td>
+        </tr>
+        <tr>
+          <th>kg</th>
+          <td>1000</td>
+          <td>23</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-          <div class="math-display">
-            $$ \begin{aligned} x &=\frac{23 \cdot 1}{1000} = 0{,}023
-            \end{aligned} $$
-          </div>
+  <div class="math-display">
+    $$ \begin{aligned} x &=\frac{23 \cdot 1}{1000} = 0{,}023
+    \end{aligned} $$
+  </div>
 
-          <p><strong>Svar:</strong> 23 kg = 0,023 tonn.</p>
-        </section>
+  <p>Vi har altså \(23\text{ kg} = 0{,}023\text{ tonn}\).</p>
+</section>
 
-        <section class="example">
-          <p>En bil kjører i 80 km/t. Vi vil gjøre om farten til m/s.</p>
+<section class="example">
+  <p>En bil kjører i 80 km/t. Vi vil gjøre om farten til m/s.</p>
 
-          <p>
-            Først gjør vi om enhetene: \(80\text{ km} = 80\,000\text{ m}\) og
-            \(1\text{ t} = 3600\text{ s}\) (dette må vi huske).
-          </p>
-          <div class="table-wrap">
-            <table
-              aria-label="Omregning fra kilometer per time til meter per sekund"
-            >
-              <tbody>
-                <tr>
-                  <th>meter</th>
-                  <td>80 000</td>
-                  <td>\(x\)</td>
-                </tr>
-                <tr>
-                  <th>sekunder</th>
-                  <td>3600</td>
-                  <td>1</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+  <p>
+    Først gjør vi om enhetene: \(80\text{ km} = 80\,000\text{ m}\) og
+    \(1\text{ t} = 3600\text{ s}\) (dette må vi huske).
+  </p>
 
-          <div class="math-display">
-            $$ \begin{aligned} x &=\frac{80\,000 \cdot 1}{3600} \approx 22{,}2
-            \end{aligned} $$
-          </div>
+  <div class="table-wrap">
+    <table
+      aria-label="Omregning fra kilometer per time til meter per sekund"
+    >
+      <tbody>
+        <tr>
+          <th>meter</th>
+          <td>80 000</td>
+          <td>\(x\)</td>
+        </tr>
+        <tr>
+          <th>sekunder</th>
+          <td>3600</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-          <p><strong>Svar:</strong> 80 km/t ≈ 22,2 m/s.</p>
-        </section>
-        <div class="remark">
-          <p>
-            Kryssmultiplikasjonen fungerer også når de fire tallene er skrevet
-            som to likeverdige brøker!
-          </p>
-        </div>
-        <section class="example">
-          <p>
-            Stine fikk 18 av 23 poeng på matematikkprøven. Hun lurer på hvor
-            mange prosent hun fikk riktig.
-          </p>
+  <div class="math-display">
+    $$ \begin{aligned} x &=\frac{80\,000 \cdot 1}{3600} \approx 22{,}2
+    \end{aligned} $$
+  </div>
 
-          <p>Vi skriver det som to likeverdige brøker:</p>
+  <p>Bilen kjører altså med en fart på omtrent \(22{,}2\text{ m/s}\).</p>
+</section>
 
-          <div class="math-display">$$ \frac{18}{23} = \frac{x}{100} $$</div>
+<div class="remark">
+  <p>
+    Kryssmultiplikasjonen fungerer også når de fire tallene er skrevet
+    som to likeverdige brøker!
+  </p>
+</div>
 
-          <div class="math-display">
-            $$ \begin{aligned} 23 \cdot x &= 18 \cdot 100 \\ x &=
-            \frac{1800}{23} \approx 78{,}3 \end{aligned} $$
-          </div>
+<section class="example">
+  <p>
+    Stine fikk 18 av 23 poeng på matematikkprøven. Hun lurer på hvor
+    mange prosent hun fikk riktig.
+  </p>
 
-          <p><strong>Svar:</strong> Stine fikk omtrent 78,3 % riktig.</p>
-        </section>
+  <p>Vi skriver det som to likeverdige brøker:</p>
+
+  <div class="math-display">$$ \frac{18}{23} = \frac{x}{100} $$</div>
+
+  <div class="math-display">
+    $$ \begin{aligned} 23 \cdot x &= 18 \cdot 100 \\ x &=
+    \frac{1800}{23} \approx 78{,}3 \end{aligned} $$
+  </div>
+
+  <p>Stine fikk altså omtrent \(78{,}3\,\%\) av poengene.
       </section>
     </main>
   </body>

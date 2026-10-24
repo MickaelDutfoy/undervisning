@@ -44,7 +44,7 @@ body {
   background: var(--screen);
   color: var(--text);
   font-family: var(--font-body);
-  line-height: 1.45;
+  line-height: 1.75;
 }
 
 .course {
@@ -304,47 +304,6 @@ th {
   font-weight: 700;
 }
 
-/* ---------- Impression ---------- */
-
-@page {
-  size: A4;
-  margin: 16mm 18mm;
-}
-
-@media print {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    background: white;
-  }
-
-  body {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-  .course {
-    width: auto;
-    min-height: 0;
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-  }
-
-  .definition,
-  .example,
-  table {
-    break-inside: avoid;
-  }
-
-  h1,
-  h2,
-  h3 {
-    break-after: avoid;
-  }
-}
-
 /* ---------- Accueil ---------- */
 
 .home-page {
@@ -458,6 +417,47 @@ th {
   color: inherit;
 }
 
+/* ---------- Impression ---------- */
+
+@page {
+  size: A4;
+  margin: 16mm 18mm;
+}
+
+@media print {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .course {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .definition,
+  .example,
+  table {
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+}
+
 /* ---------- Petit écran ---------- */
 
 @media screen and (max-width: 850px) {
@@ -467,5 +467,20 @@ th {
     margin: 0;
     padding: 24px;
     box-shadow: none;
+  }
+
+  .tree-branch {
+    margin-left: 2mm;
+    padding-left: 2mm;
+  }
+
+  .resource-tree summary {
+    padding-left: 1mm;
+    padding-right: 1mm;
+  }
+
+  .resource-link {
+    padding-left: 1mm;
+    padding-right: 1mm;
   }
 }
