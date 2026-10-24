@@ -1,19 +1,34 @@
 :root {
   --text: #182026;
   --muted: #65717c;
-  --accent: #b3262d;
-  --accent-soft: #f9eeee;
+
+  --heading: #201d1b;
+  --heading-underline: #c87555;
+
+  --accent: #b85f42;
+  --accent-soft: #f6ebe6;
+
   --line: #cfd6dc;
   --paper: #ffffff;
   --screen: #eef1f4;
-  --remark-bg: #edf6fc;
-  --remark-border: #9bc7e8;
+
+  --definition-bg: #fff4e8;
+  --definition-border: #e6b87a;
+  --definition-label: #c67a24;
+
+  --method-bg: #eef8f1;
+  --method-border: #9fcfae;
+  --method-label: #55985f;
+
+  --remark-bg: #f3f8fc;
+  --remark-border: #bfd7e8;
+  --remark-label: #6f9fbe;
 
   --page-width: 210mm;
   --page-margin-x: 18mm;
   --page-margin-y: 16mm;
 
-  --font-body: "Segoe UI", Arial, sans-serif;
+  --font-body: Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -50,17 +65,49 @@ h3 {
 }
 
 h1 {
-  margin: 0 0 6mm;
-  color: var(--accent);
-  font-size: 24pt;
+  width: fit-content;
+  margin: 0 auto 10mm;
+  padding-bottom: 2.5mm;
+
+  color: var(--heading);
+  font-size: 26pt;
+  font-weight: 700;
   line-height: 1.1;
+
+  border-bottom: 2px solid var(--heading-underline);
 }
 
 h2 {
-  margin: 7mm 0 4mm;
-  color: var(--accent);
+  margin: 9mm 0 5mm;
+
+  color: var(--heading);
   font-size: 17pt;
+  font-weight: 700;
   line-height: 1.2;
+}
+
+.section-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 8mm;
+  height: 8mm;
+  margin-right: 2mm;
+
+  background: var(--accent-soft);
+  color: var(--accent);
+
+  border-radius: 50%;
+
+  font-size: 11pt;
+  font-weight: 700;
+}
+
+h2 u {
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.18em;
 }
 
 h3 {
@@ -79,36 +126,151 @@ strong {
   font-weight: 700;
 }
 
+u {
+  text-underline-offset: 0.15em;
+}
+
 /* ---------- Blocs pédagogiques ---------- */
 
+.definition,
+.method,
 .remark {
-  margin: 4mm 0;
-  padding: 3.5mm 5mm;
-  background: var(--remark-bg);
-  border: 1px solid var(--remark-border);
+  position: relative;
+  margin: 5mm 0;
+  padding: 5mm 5mm 4.5mm;
+  border: 1px solid;
   border-radius: 3mm;
   break-inside: avoid;
 }
 
+.definition {
+  --block-bg: var(--definition-bg);
+  --block-label: var(--definition-label);
+
+  background: var(--definition-bg);
+  border-color: var(--definition-border);
+}
+
+.method {
+  --block-bg: var(--method-bg);
+  --block-label: var(--method-label);
+
+  background: var(--method-bg);
+  border-color: var(--method-border);
+}
+
+.remark {
+  --block-bg: var(--remark-bg);
+  --block-label: var(--remark-label);
+
+  background: var(--remark-bg);
+  border-color: var(--remark-border);
+}
+
+.definition::before,
+.method::before,
+.remark::before {
+  position: absolute;
+  top: 0;
+  right: 15mm;
+
+  padding: 0 2mm;
+  transform: translateY(-50%);
+
+  color: var(--block-label);
+
+  background: linear-gradient(
+    to bottom,
+    var(--paper) 0 50%,
+    var(--block-bg) 50% 100%
+  );
+
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.definition::before {
+  content: "Definisjon";
+}
+
+.method::before {
+  content: "Metode";
+}
+
+.remark::before {
+  content: "Merk";
+}
+
+.definition p:last-child,
+.method p:last-child,
 .remark p:last-child {
   margin-bottom: 0;
 }
 
 .example {
-  margin: 6mm 0 4mm;
+  position: relative;
+  margin: 6mm 0;
+  padding: 6mm 0 4mm 18mm;
   break-inside: avoid;
 }
 
-.answer {
-  margin-top: 5mm;
+.example::before {
+  content: "Eksempel";
+
+  position: absolute;
+  left: 10mm;
+  top: 0;
+  transform: translate(-50%, -55%);
+
+  padding: 0 2mm;
+  background: var(--paper);
+
+  color: var(--muted);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.example::after {
+  content: "";
+
+  position: absolute;
+  left: 10mm;
+  top: 4mm;
+  bottom: 0;
+
+  width: 10mm;
+
+  border-left: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-bottom-left-radius: 3mm;
+
+  pointer-events: none;
+}
+
+.example > :first-child {
+  margin-top: 0;
+}
+
+.example > :last-child {
+  margin-bottom: 0;
 }
 
 /* ---------- Maths ---------- */
 
 .math-display {
-  margin: 5mm 0;
+  margin: 3mm 0;
   text-align: center;
   overflow-x: auto;
+  white-space: nowrap;
+}
+
+.katex {
+    font-size: 1em;
+  white-space: nowrap;
 }
 
 .katex-display {
@@ -170,7 +332,7 @@ th {
     box-shadow: none;
   }
 
-  .remark,
+  .definition,
   .example,
   table {
     break-inside: avoid;
@@ -181,6 +343,128 @@ th {
   h3 {
     break-after: avoid;
   }
+}
+
+/* ---------- Accueil ---------- */
+
+.home-page {
+  min-height: 100vh;
+}
+
+.home {
+  width: min(900px, calc(100% - 40px));
+  margin: 60px auto;
+}
+
+.home-header {
+  margin-bottom: 12mm;
+}
+
+.home-eyebrow {
+  margin: 0 0 2mm;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.home-header h1 {
+  margin-bottom: 4mm;
+}
+
+.home-intro {
+  max-width: 650px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.resource-browser {
+  padding: 8mm;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4mm;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 6%);
+}
+
+.resource-browser h2 {
+  margin-top: 0;
+}
+
+.resource-tree {
+  margin-top: 5mm;
+}
+
+.resource-tree details {
+  margin: 2mm 0;
+}
+
+.resource-tree summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 2.5mm 3mm;
+  border-radius: 2mm;
+  font-weight: 650;
+}
+
+.resource-tree summary:hover {
+  background: var(--accent-soft);
+}
+
+.resource-tree summary::-webkit-details-marker {
+  display: none;
+}
+
+.resource-tree summary::before {
+  content: "›";
+  display: inline-block;
+  width: 1em;
+  margin-right: 2mm;
+  color: var(--accent);
+  font-size: 1.2em;
+  transition: transform 0.15s ease;
+}
+
+.resource-tree details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.tree-branch {
+  margin-left: 7mm;
+  padding-left: 5mm;
+  border-left: 1px solid var(--line);
+}
+
+.resource-link {
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+  margin: 2mm 0;
+  padding: 2.5mm 3mm;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 2mm;
+}
+
+.resource-link:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.folder-icon,
+.file-icon {
+  width: 1.4em;
+  text-align: center;
+}
+
+.home-footer {
+  margin-top: 8mm;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.home-footer a {
+  color: inherit;
 }
 
 /* ---------- Petit écran ---------- */
