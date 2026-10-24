@@ -269,7 +269,7 @@ u {
 }
 
 .katex {
-    font-size: 1em;
+  font-size: 1em;
   white-space: nowrap;
 }
 
@@ -357,16 +357,7 @@ th {
 }
 
 .home-header {
-  margin-bottom: 12mm;
-}
-
-.home-eyebrow {
-  margin: 0 0 2mm;
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  margin-bottom: 6mm;
 }
 
 .home-header h1 {
