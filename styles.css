@@ -1,0 +1,188 @@
+:root {
+  --text: #182026;
+  --muted: #65717c;
+  --accent: #b3262d;
+  --accent-soft: #f9eeee;
+  --line: #cfd6dc;
+  --paper: #ffffff;
+  --screen: #eef1f4;
+  --remark-bg: #edf6fc;
+  --remark-border: #9bc7e8;
+
+  --page-width: 210mm;
+  --page-margin-x: 18mm;
+  --page-margin-y: 16mm;
+
+  --font-body: "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background: var(--screen);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.45;
+}
+
+.course {
+  width: var(--page-width);
+  min-height: 297mm;
+  margin: 24px auto;
+  padding: var(--page-margin-y) var(--page-margin-x);
+  background: var(--paper);
+  box-shadow: 0 8px 30px rgb(0 0 0 / 8%);
+}
+
+/* ---------- Titres ---------- */
+
+h1,
+h2,
+h3 {
+  break-after: avoid;
+}
+
+h1 {
+  margin: 0 0 6mm;
+  color: var(--accent);
+  font-size: 24pt;
+  line-height: 1.1;
+}
+
+h2 {
+  margin: 7mm 0 4mm;
+  color: var(--accent);
+  font-size: 17pt;
+  line-height: 1.2;
+}
+
+h3 {
+  margin: 6mm 0 3mm;
+  font-size: 13pt;
+  line-height: 1.25;
+}
+
+/* ---------- Texte ---------- */
+
+p {
+  margin: 0 0 3mm;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* ---------- Blocs pédagogiques ---------- */
+
+.remark {
+  margin: 4mm 0;
+  padding: 3.5mm 5mm;
+  background: var(--remark-bg);
+  border: 1px solid var(--remark-border);
+  border-radius: 3mm;
+  break-inside: avoid;
+}
+
+.remark p:last-child {
+  margin-bottom: 0;
+}
+
+.example {
+  margin: 6mm 0 4mm;
+  break-inside: avoid;
+}
+
+.answer {
+  margin-top: 5mm;
+}
+
+/* ---------- Maths ---------- */
+
+.math-display {
+  margin: 5mm 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.katex-display {
+  margin: 0.7em 0;
+}
+
+/* ---------- Tableaux ---------- */
+
+.table-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 5mm 0;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  break-inside: avoid;
+}
+
+th,
+td {
+  min-width: 16mm;
+  padding: 2mm 3mm;
+  border: 1px solid #444;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: 700;
+}
+
+/* ---------- Impression ---------- */
+
+@page {
+  size: A4;
+  margin: var(--page-margin-y) var(--page-margin-x);
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .course {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .remark,
+  .example,
+  table {
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+}
+
+/* ---------- Petit écran ---------- */
+
+@media screen and (max-width: 850px) {
+  .course {
+    width: 100%;
+    min-height: auto;
+    margin: 0;
+    padding: 24px;
+    box-shadow: none;
+  }
+}
