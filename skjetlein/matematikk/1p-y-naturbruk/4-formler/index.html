@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../../favicon.svg" type="image/svg+xml" />
+    <title>Formler fra dagliliv og yrke</title>
+
+    <!-- KaTeX : uniquement ce qu'il faut pour écrire les maths en LaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Formler fra dagliliv og yrke</h1>
+
+      <section>
+        <h2>
+          <span class="section-number">1.</span>
+          <u>Å forstå og bruke formler</u>
+        </h2>
+
+        <div class="definition">
+          <p>
+            En matematisk formel er et uttrykk som beskriver en sammenheng og
+            gjør det mulig å utføre en beregning med ulike størrelser.
+          </p>
+        </div>
+
+        <div class="example">
+          <p>
+            Vi har mange formler for å beregne ulike størrelser, for eksempel
+            arealet av en sirkel \(A = 2 \cdot {\pi} \cdot r\) eller
+            gjennomsnittsfarten til et kjøretøy \(v = \dfrac{s}{t}\).
+          </p>
+        </div>
+
+        <div class="method">
+          <p>
+            For å bruke en formel erstatter vi bokstavene som beskriver
+            størrelser, med verdiene vi har fått oppgitt.
+          </p>
+        </div>
+
+        <div class="example">
+          <p>
+            En bil med masse \(1500\text{ kg}\) kjører i \(80\text{ km/h}\). Vi
+            vil beregne bilens kinetiske energi.
+          </p>
+
+          <p>
+            Vi bruker formelen \(E_c = \dfrac{1}{2}mv^2\), der \(m\) er massen i
+            kilogram og \(v\) er farten i meter per sekund.
+          </p>
+
+          <p>
+            Først må vi derfor gjøre om farten: \(80\text{ km/h} \approx
+            22{,}2\text{ m/s}\).
+          </p>
+
+          <div class="math-display">
+            $$ \begin{aligned} E_c &= \dfrac{1}{2} \cdot 1500 \cdot 22{,}2^2 \\
+            &\approx 370\,000\text{ J} \end{aligned} $$
+          </div>
+
+          <p>
+            Bilen har dermed en kinetisk energi på omtrent \(370\text{ kJ}\).
+          </p>
+        </div>
+
+        <div class="remark">
+          <p>
+            Når vi bruker en formel, kan det hende at vi må løse en likning.
+          </p>
+        </div>
+
+        <div class="example">
+          <p>
+            Vi vil lage et rektangulært beite for 10 kyr. Vi planlegger et areal
+            på \(50\text{ dekar}\). Den ene siden av beitet er \(200\text{ m}\).
+            Vi vil finne lengden på den andre siden.
+          </p>
+
+          <p>
+            Vi vet at \(1\text{ dekar} = 1000\text{ m}^2\), altså er \(50\text{
+            dekar} = 50\,000\text{ m}^2\).
+          </p>
+
+          <p>
+            Vi bruker formelen for arealet av et rektangel: \(A = L \cdot l\).
+          </p>
+
+          <p>
+            Her kjenner vi \(A = 50\,000\) og \(L = 200\), og vi skal finne
+            \(l\).
+          </p>
+
+          <div class="math-display">
+            $$ \begin{aligned} 50\,000 &= 200 \cdot l \\ l &=
+            \dfrac{50\,000}{200} \\ l &= 250 \end{aligned} $$
+          </div>
+
+          <p>Beitet må derfor måle \(200\text{ m}\) ganger \(250\text{ m}\).</p>
+        </div>
+
+        <div class="remark">
+          <p>
+            Det er ikke nødvendig å lære alle variantene av den samme formelen
+            utenat. Det viktigste er å kunne finne dem igjen.
+          </p>
+        </div>
+
+        <div class="example">
+          <p>
+            Gjennomsnittsfarten er \(v = \dfrac{s}{t}\). Vi kan skrive formelen
+            som to likeverdige brøker for å bruke kryssmultiplikasjon:
+          </p>
+
+          <div class="math-display">
+            $$ \begin{aligned} \dfrac{v}{1} = \dfrac{s}{t} \end{aligned} $$
+          </div>
+
+          <p>Da kan vi finne:</p>
+
+          <div class="math-display">
+            $$ \begin{aligned} s = \dfrac{v \cdot t}{1} = v \cdot t
+            \end{aligned} $$
+          </div>
+
+          <div class="math-display">
+            $$ \begin{aligned} t = \dfrac{s \cdot 1}{v} = \dfrac{s}{v}
+            \end{aligned} $$
+          </div>
+        </div>
+      </section>
+
+      <!-- <section>
+        <h2>
+          <span class="section-number">2.</span>
+          <u>Élaborer des formules</u>
+        </h2>
+      </section>
+    --></main>
+  </body>
+</html>
