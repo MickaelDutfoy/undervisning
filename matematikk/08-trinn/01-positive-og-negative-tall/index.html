@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../../favicon.svg" type="image/svg+xml" />
+    <title>Regning med positive og negative tall</title>
+
+    <!-- KaTeX : bare det som trengs for å skrive matematikk med LaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Regning med positive og negative tall</h1>
+
+      <section>
+        <h2>
+          <span class="section-number">1.</span>
+          <u>Addisjon</u>
+        </h2>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Et positivt eller negativt talls avstand fra null er
+            tallverdien uten fortegnet.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <p>
+            Avstanden fra null til \(23{,}4\) er \(23{,}4\). Avstanden fra null
+            til \(-\dfrac{2}{3}\) er \(\dfrac{2}{3}\).
+          </p>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            Når vi skal addere to tall, har vi to mulige situasjoner.
+          </p>
+
+          <div class="table-wrap">
+            <table style="text-align: left">
+              <thead>
+                <tr>
+                  <th>
+                    Hvis tallene har samme fortegn
+                  </th>
+                  <th>
+                    Hvis tallene har ulike fortegn
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>Vi beholder fortegnet de har felles.</li>
+                      <li>
+                        Vi adderer avstandene fra null.
+                      </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>
+                        Vi beholder fortegnet til tallet som har
+                        størst avstand fra null.
+                      </li>
+                      <li>
+                        Vi finner differansen mellom avstandene fra
+                        null.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Summen er resultatet av en addisjon, og differansen er resultatet
+            av en subtraksjon.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+              (-7)+(-11) &= -18 \\
+              (-6{,}2)+(+9{,}9) &= +3{,}7 \\
+              -25+40 &= (-25)+(+40)=+15
+            \end{aligned}
+            $$
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">2.</span>
+          <u>Subtraksjon</u>
+        </h2>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Det motsatte tallet til et tall har samme avstand fra
+            null, men motsatt fortegn.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <p>
+            Det motsatte tallet til \(5\) er \(-5\). Det motsatte tallet til
+            \(-8{,}2\) er \(8{,}2\).
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Ikke bland sammen det «motsatte tallet» og den «inverse verdien»
+            til et tall. Det er ikke det samme!
+          </p>
+        </div>
+
+        <div class="definition" data-label="Egenskap">
+          <p>
+            Å subtrahere et tall er det samme som å addere det motsatte tallet.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+              (-7)-(-11) &= (-7)+(+11)=4 \\
+              8{,}4-(+22{,}7) &= (+8{,}4)+(-22{,}7)=-14{,}3
+            \end{aligned}
+            $$
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Parentesene vi bruker i starten for å se ting tydelig, bør
+            gradvis fjernes for å gjøre regnestykkene lettere å lese.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel">
+          <p>
+            Vanligvis skriver vi ikke \((+5)-(+3)\), men heller \(5-3\).
+          </p>
+        </div>
+
+        <div class="definition" data-label="Egenskap">
+          <p>For alle tall \(a\) og \(b\) gjelder:</p>
+          <ul>
+            <li>\(a+(+b)=a+b\)</li>
+            <li>\(a+(-b)=a-b\)</li>
+            <li>\(a-(+b)=a-b\)</li>
+            <li>\(a-(-b)=a+b\)</li>
+          </ul>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Når parentesene er fjernet, kan vi bruke metoden for addisjon.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+              -7-11 &= (-7)+(-11)=-18 \\
+              19-23 &= (+19)+(-23)=-4
+            \end{aligned}
+            $$
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            I starten kan vi bruke tallinjer for å visualisere disse
+            regneoperasjonene bedre.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <p>\(-5+9=4\)</p>
+          <img
+            src="./assets/number-line-1.png"
+            alt="Tallinje som illustrerer regnestykket -5 + 9 = 4"
+          />
+
+          <p>\(-3-4=-7\)</p>
+          <img
+            src="./assets/number-line-2.png"
+            alt="Tallinje som illustrerer regnestykket -3 - 4 = -7"
+          />
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            I et regnestykke med flere addisjoner og subtraksjoner gjør jeg
+            først alle subtraksjonene om til addisjoner (eller fjerner
+            parentesene). Deretter utfører jeg regneoperasjonene ved å samle
+            de negative tallene på én side og de positive på den andre.
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Når det ikke er parenteser, kan regnestykket ses som en rekke
+            addisjoner, og hvert \(+\) eller \(-\) kan ses som fortegnet til
+            tallet som kommer etter.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel">
+<div class="math-display">
+  $$
+  \begin{aligned}
+    &(-6)-(+8)+(+11)-(+19) +(+3)-(+7)-(-21) \\
+    &= -6-8+11-19+3-7+21 \\
+    &= -40+35 \\
+    &= -5
+  \end{aligned}
+  $$
+</div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Hvis to motsatte tall adderes i et regnestykke, opphever de
+            hverandre. Vi kan derfor stryke dem.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel">
+          <div class="math-display">
+            $$ -7-11+3+7-(-3)+12=7 $$
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">3.</span>
+          <u>Multiplikasjon</u>
+        </h2>
+
+        <div class="method" data-label="Metode">
+          <p>
+            Når vi multipliserer to positive eller negative tall, finner vi
+            fortegnet til resultatet ved hjelp av følgende regel.
+          </p>
+          <ul>
+            <li>Hvis de har samme fortegn, blir resultatet positivt.</li>
+            <li>Hvis de har ulike fortegn, blir resultatet negativt.</li>
+          </ul>
+          <p>
+            Avstanden fra null til resultatet er produktet av avstandene fra
+            null til de to tallene.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+              (-4)\times(-2) &= +8 \\
+              (-7)\times(+11) &= -77
+            \end{aligned}
+            $$
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Å multiplisere med \(-1\) betyr altså å bytte tallet med det
+            motsatte tallet. Med andre ord: For alle tall \(b\) som ikke er
+            null, har vi \(b\times(-1)=-b\).
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+              (-7)\times(-1) &= +7 \\
+              (+8)\times(-1) &= -8
+            \end{aligned}
+            $$
+          </div>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å finne fortegnet til et produkt med flere faktorer, ser vi på
+            antallet negative faktorer.
+          </p>
+          <ul>
+            <li>Hvis antallet er partall, blir resultatet positivt.</li>
+            <li>Hvis antallet er oddetall, blir resultatet negativt.</li>
+          </ul>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Vi kan også gruppere faktorene på en smart måte for å gjøre
+            utregningene enklere.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+              (-5)\times(-2)\times(+3) &= +30 \\
+              (-2)\times(+4)\times(-3)\times(-5) &= -120
+            \end{aligned}
+            $$
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">4.</span>
+          <u>Divisjon</u>
+        </h2>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Den inverse verdien til et tall \(a\) som ikke er
+            null, er tallet \(\dfrac{1}{a}\).
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <p>
+            Den inverse verdien til \(2\) er \(\dfrac{1}{2}\). Den inverse
+            verdien til \(-8\) er \(-\dfrac{1}{8}\).
+          </p>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            Å dividere med et tall er det samme som å multiplisere med den
+            inverse verdien.
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Siden et tall og den inverse verdien har samme fortegn, følger
+            fortegnet til en kvotient av to positive eller negative tall samme
+            regel som fortegnet til et produkt.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">5.</span>
+          <u>Regnerekkefølge</u>
+        </h2>
+
+        <div class="method" data-label="Metode">
+          <p>
+            Når et regnestykke inneholder flere regneoperasjoner, går vi fram
+            på følgende måte.
+          </p>
+          <ul>
+            <li>
+              Finn tellerne og nevnerne, og utfør regneoperasjonene i dem.
+            </li>
+            <li>
+              Regn ut parentesene, og begynn med de innerste parentesene.
+            </li>
+            <li>Utfør divisjonene og multiplikasjonene.</li>
+            <li>Fullfør regnestykket.</li>
+          </ul>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Hvis vi har \((8-(5-3))\), er \((5-3)\) den innerste parentesen og
+            derfor den som skal regnes ut først.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+              (3+7)\times\dfrac{35-3}{(-4)\times(-2)}-3\times(-5)
+              &= (3+7)\times\dfrac{32}{8}-3\times(-5)
+              && \text{(steg 1)} \\
+              &= 10\times\dfrac{32}{8}-3\times(-5)
+              && \text{(steg 2)} \\
+              &= 10\times4-3\times(-5)
+              && \text{(steg 3)} \\
+              &= 40-(-15) \\
+              &= 40+(+15)
+              && \text{(steg 4)} \\
+              &= 55
+            \end{aligned}
+            $$
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

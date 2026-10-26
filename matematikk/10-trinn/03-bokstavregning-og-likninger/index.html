@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../../favicon.svg" type="image/svg+xml" />
+    <title>Bokstavregning og likninger</title>
+
+    <!-- KaTeX : bare det som trengs for å skrive matematikk med LaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Bokstavregning og likninger</h1>
+
+      <section>
+        <h2>
+          <span class="section-number">1.</span>
+          <u>Repetisjon av regneregler</u>
+        </h2>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Å forenkle et uttrykk betyr å utføre alle regneoperasjonene som er
+            mulige, slik at uttrykket blir enklere, ved hjelp av regnereglene vi
+            skal gå gjennom.
+          </p>
+        </div>
+
+        <div class="definition" data-label="Egenskaper">
+          <p>For alle tall \(x\) gjelder:</p>
+
+          <div class="math-display">
+            $$ \begin{aligned} x+x &= 2x &\qquad x\cdot x &= x^2 \\ 1\cdot x &=
+            x &\qquad 0\cdot x &= 0 \end{aligned} $$
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>Vi kan bare addere like ledd.</p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$ \begin{aligned}
+            \textcolor{blue}{\underline{\textcolor{black}{-3x^2}}} \,
+            \textcolor{red}{\underline{\textcolor{black}{+6}}} \,
+            \textcolor{green}{\underline{\textcolor{black}{-6x}}} \,
+            \textcolor{red}{\underline{\textcolor{black}{+4}}} \,
+            \textcolor{blue}{\underline{\textcolor{black}{+2x^2}}} \,
+            \textcolor{green}{\underline{\textcolor{black}{+4x}}} &= -x^2-2x+10
+            \\ 4\cdot3x-7 &= 12x-7 \\ 5x\cdot(-2x)+3x-11x^2 &=
+            \textcolor{blue}{\underline{\textcolor{black}{-10x^2}}} +3x \,
+            \textcolor{blue}{\underline{\textcolor{black}{-11x^2}}} \\ &=
+            -21x^2+3x \end{aligned} $$
+          </div>
+
+          <p>\(3x+2\) eller \(-x^2+4x\) kan ikke forenkles videre!</p>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            Hvis en parentes bare inneholder addisjoner og subtraksjoner og …
+          </p>
+          <ul>
+            <li>… står etter et \(+\)-tegn, kan parentesen fjernes.</li>
+            <li>
+              … står etter et \(-\)-tegn, kan parentesen fjernes ved å skifte
+              fortegn på hvert ledd.
+            </li>
+          </ul>
+          <p>Dette gjelder uansett hvor mange ledd det er i parentesen.</p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$ \begin{aligned} 2x+(-3+x) &= 2x-3+x=3x-3 \\ x^2-(3x-7+x^2) &=
+            x^2-3x+7-x^2=-3x+7 \end{aligned} $$
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Vi kan se dette som en slags «fordeling av fortegn». Fortegnet foran
+            parentesen fordeles på fortegnene inni parentesen, og reglene for
+            fortegn fra 7. trinn gjelder: For alle tall \(a\) og \(b\),
+          </p>
+
+          <div class="math-display">
+            $$ \begin{aligned} a+(+b) &= a+b \\ a+(-b) &= a-b \\ a-(+b) &= a-b
+            \\ a-(-b) &= a+b \end{aligned} $$
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">2.</span>
+          <u>Den distributive loven</u>
+        </h2>
+
+        <div class="definition" data-label="Definisjon">
+          <p>For alle tall \(k\), \(a\) og \(b\) gjelder:</p>
+
+          <div class="math-display">$$ k\cdot(a+b)=k\cdot a+k\cdot b $$</div>
+
+          <p>Dette kalles den distributive loven.</p>
+          <p>Fra venstre mot høyre multipliserer vi ut parentesen.</p>
+          <p>Fra høyre mot venstre faktoriserer vi.</p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            I dette kapitlet nøyer vi oss med å multiplisere ut parenteser.
+            Faktorisering tar vi senere.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$ \begin{aligned} 5(x+7) &= 5\cdot x+5\cdot 7 =5x+35 \\
+            -6\left(x^2-\dfrac{1}{3}\right) &= -6\cdot
+            x^2+(-6)\cdot\left(-\dfrac{1}{3}\right) =-6x^2+2 \\ (6x-9)\div 3 &=
+            6x\div 3-9\div 3 =2x-3 \end{aligned} $$
+          </div>
+        </div>
+
+        <div class="definition" data-label="Egenskap">
+          <p>For alle tall \(a\), \(b\), \(x\) og \(y\) gjelder:</p>
+
+          <div class="math-display">$$ (a+b)(x+y)=ax+bx+ay+by $$</div>
+
+          <p>Dette er multiplikasjon av to parentesuttrykk med hverandre.</p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>Pass på fortegnene når du multipliserer ut!</p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$ \begin{aligned}
+            \left(x+\dfrac{1}{2}\right)\left(x+\dfrac{1}{3}\right) &=x\cdot
+            x+x\cdot\dfrac{1}{3} +\dfrac{1}{2}\cdot x
+            +\dfrac{1}{2}\cdot\dfrac{1}{3} \\
+            &=x^2+\dfrac{1}{3}x+\dfrac{1}{2}x+\dfrac{1}{6} \\
+            &=x^2+\dfrac{2}{6}x+\dfrac{3}{6}x+\dfrac{1}{6} \\
+            &=x^2+\dfrac{5}{6}x+\dfrac{1}{6} \end{aligned} $$
+          </div>
+
+          <div class="math-display">
+            $$ \begin{aligned} (a-2)(3-a)
+            &=a\cdot3+a\cdot(-a)+(-2)\cdot3+(-2)\cdot(-a) \\ &=3a+(-a^2)+(-6)+2a
+            \\ &=-a^2+5a-6 \end{aligned} $$
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">3.</span>
+          <u>Likninger</u>
+        </h2>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Å løse en likning betyr å finne verdien en bokstav, kalt den
+            ukjente, må ha for at likheten skal være riktig.
+          </p>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å løse en likning utfører vi de samme regneoperasjonene på begge
+            sider av \(=\)-tegnet helt til den ukjente står alene.
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            En regneoperasjon gjelder hele linjen. Pass derfor på
+            regnerekkefølgen, og velg operasjonene som gjør at den ukjente blir
+            stående alene.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel">
+          <p>Vi har likningen \(3a-22=80\).</p>
+          <p>
+            Først regner vi
+            \(3a-22\textcolor{red}{+22}=80\textcolor{red}{+22}\), altså
+            \(3a=102\).
+          </p>
+          <p>
+            Deretter får vi \( \textcolor{red}{\dfrac{\textcolor{black}{3a}}{3}}
+            \textcolor{black}{=}
+            \textcolor{red}{\dfrac{\textcolor{black}{102}}{3}} \), og dermed er
+            løsningen \(a=34\).
+          </p>
+        </div>
+        <div class="example" data-label="Eksempel">
+          <p>Vi har likningen \(-7x-11=5x+4\).</p>
+
+          <p>
+            Vi samler tallene på høyre side:
+            \(-7x-11\textcolor{red}{+11}=5x+4\textcolor{red}{+11}\), altså
+            \(-7x=5x+15\).
+          </p>
+
+          <p>
+            Vi samler \(x\)-leddene på venstre side:
+            \(-7x\textcolor{red}{-5x}=5x+15\textcolor{red}{-5x}\), altså
+            \(-12x=15\).
+          </p>
+
+          <p>
+            Til slutt deler og forkorter vi: \(
+            \textcolor{red}{\dfrac{\textcolor{black}{-12x}}{-12}}
+            \textcolor{black}{=}
+            \textcolor{red}{\dfrac{\textcolor{black}{15}}{-12}} \), og dermed
+            \(x=\dfrac{15}{-12}=-\dfrac{5}{4}\).
+          </p>
+        </div>
+        <div class="example" data-label="Eksempel">
+          <p>
+            Vi har likningen \(\dfrac{y}{6}-7=3\). Vi regner
+            \(\dfrac{y}{6}-7\textcolor{red}{+7} =3\textcolor{red}{+7}\), altså
+            \(\dfrac{y}{6}=10\).
+          </p>
+          <p>
+            Deretter multipliserer vi begge sider med \(6\) for å fjerne
+            divisjonen: \(\dfrac{y}{6}\textcolor{red}{\cdot6}
+            =10\textcolor{red}{\cdot6}\), og dermed \(y=60\).
+          </p>
+        </div>
+
+        <div class="definition" data-label="Egenskap">
+          <p>
+            Et produkt av to faktorer er null hvis minst én av faktorene er
+            null.
+          </p>
+          <p>
+            Med andre ord: Hvis \(a\cdot b=0\), har vi \(a=0\) eller \(b=0\).
+          </p>
+        </div>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Dette gjør det mulig å løse andre typer likninger som kan ha mer enn
+            én løsning, og som står som et produkt av to parenteser. Da får vi
+            to forskjellige likninger. Vi sier at likningen står på produktform.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel">
+          <p>
+            Vi har likningen \((x-6)(x+3)=0\).</p><p>Fra egenskapen over vet vi at dette betyr at
+            \(x-6=0\) eller \(x+3=0\), altså \(x=6\) eller \(x=-3\). Likningen
+            har derfor to løsninger: \(6\) og \(-3\).
+          </p></div>
+        <div class="example" data-label="Eksempel">
+          <div class="math-display">
+            $$ \begin{aligned} (3x+6)(8x-4)&=0 \\ 3x+6=0 &\quad\text{eller}\quad
+            8x-4=0 \\ 3x=-6 &\quad\text{eller}\quad 8x=4 \\ x=-2
+            &\quad\text{eller}\quad x=\dfrac{1}{2} \end{aligned} $$
+          </div>
+
+          <p>Likningen har to løsninger: \(-2\) og \(\dfrac{1}{2}\).</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

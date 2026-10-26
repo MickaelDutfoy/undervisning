@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../../favicon.svg" type="image/svg+xml" />
+    <title>Enkle andregradslikninger</title>
+
+    <!-- KaTeX : bare det som trengs for å skrive matematikk med LaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Enkle andregradslikninger</h1>
+
+      <section>
+        <h2>
+          <span class="section-number">1.</span>
+          <u>Kvadratsetningene</u>
+        </h2>
+
+        <div class="remark" data-label="Husk">
+          <p>La \(x\), \(y\), \(a\) og \(b\) være fire tall. Da gjelder:</p>
+
+          <div class="math-display">$$ (a+b)(x+y)=ax+ay+bx+by $$</div>
+
+          <p>Dette er multiplikasjon av to parentesuttrykk med hverandre.</p>
+        </div>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Tre spesielle tilfeller av multiplikasjon av to parentesuttrykk bør
+            kunne brukes direkte uten ekstra utregning. For alle tall \(a\) og
+            \(b\) gjelder:
+          </p>
+
+          <div class="math-display">
+            $$ \begin{aligned} (a+b)^2 &= a^2+2ab+b^2 \\ (a-b)^2 &= a^2-2ab+b^2
+            \\ (a+b)(a-b) &= a^2-b^2 \end{aligned} $$
+          </div>
+
+          <p>Disse kalles kvadratsetningene.</p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$ \begin{aligned} (x+3)^2 &=x^2+2\cdot x\cdot3+3^2 =x^2+6x+9 \\
+            (3x-4)^2 &=(3x)^2-2\cdot3x\cdot4+4^2 =9x^2-24x+16 \\ (2x+7)(2x-7)
+            &=(2x)^2-7^2 =4x^2-49 \end{aligned} $$
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">2.</span>
+          <u>Faktorisering</u>
+        </h2>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Når vi bruker den distributive loven, med én eller to parenteser,
+            for å gå fra et uttrykk med parenteser til et uttrykk uten
+            parenteser, sier vi at vi multipliserer ut parentesene.
+          </p>
+          <p>
+            Når vi går motsatt vei, altså fra et uttrykk uten parenteser til et
+            uttrykk med parenteser, kalles det faktorisering.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <div class="math-display">
+            $$ \begin{aligned} 5x+45 &=5\cdot x+5\cdot9 =5(x+9) \\ 7x-4x^2
+            &=x\cdot7-x\cdot4x =x(7-4x) \end{aligned} $$
+          </div>
+
+          <div class="math-display">
+            $$ \begin{aligned} &(2x+2)(3x-5)+(2x+2)(4-x) \\
+            &\qquad=(2x+2)\big((3x-5)+(4-x)\big) \\ &\qquad=(2x+2)(3x-5+4-x) \\
+            &\qquad=(2x+2)(2x-1) \end{aligned} $$
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>Kvadratsetningene gjør det mulig å faktorisere flere uttrykk.</p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <p>
+            \(x^2-9=x^2-3^2\): Vi kjenner igjen den tredje kvadratsetningen, og
+            dermed \(x^2-9=x^2-3^2=(x+3)(x-3)\).
+          </p>
+
+          <p>\(16x^2-25=(4x)^2-5^2=(4x+5)(4x-5)\), på samme måte.</p>
+
+          <p>
+            \(x^2+6x+9\): Vi kjenner igjen den første kvadratsetningen med
+            \(a=x\) og \(b=3\), og dermed \(x^2+6x+9=(x+3)^2\). Dette fungerer
+            fordi \(6x=2\cdot x\cdot3\).
+          </p>
+
+          <p>
+            \(4x^2-24x+81\): Vi kjenner ved første øyekast igjen den andre
+            kvadratsetningen med \(a=2x\) og \(b=9\), men
+            \(2\cdot2x\cdot9=36x\neq24x\). Derfor kan vi ikke faktorisere dette
+            på denne måten (på 10. trinn …).
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">3.</span>
+          <u>Spesielle andregradslikninger</u>
+        </h2>
+
+        <div class="definition" data-label="Egenskap">
+          <p>
+            Hvis \(a>0\), har en likning på formen \(x^2=a\) to løsninger:
+            \(x=\sqrt{a}\) eller \(x=-\sqrt{a}\).
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            I det første tilfellet har vi \(x^2=(\sqrt{a})^2=a\), og i det andre
+            \(x^2=(-\sqrt{a})^2=a\).
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempler">
+          <p>\(x^2=36\) har to løsninger: \(x=6\) eller \(x=-6\).</p>
+          <p>
+            \(2x^2=28\) kan skrives som \(x^2=14\), og dermed \(x=\sqrt{14}\)
+            eller \(x=-\sqrt{14}\).
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>Faktorisering gjør det mulig å løse enda flere likninger.</p>
+        </div>
+
+        <div class="example" data-label="Eksempel">
+          <div class="math-display">
+            $$ \begin{aligned} 16x-x^2 &= 0 \\ 16\cdot x-x\cdot x &= 0 \\
+            x(16-x) &= 0 \\ x=0 &\quad\text{eller}\quad 16-x=0 \\ x=0
+            &\quad\text{eller}\quad x=16 \end{aligned} $$
+          </div>
+
+          <p>Likningen har to løsninger: \(x=0\) eller \(x=16\).</p>
+        </div>
+        <div class="example" data-label="Eksempel">
+          <div class="math-display">
+            $$ \begin{aligned} (x-1)(3x+2)-(x-1)(5-x) &= 0 \\
+            (x-1)\big((3x+2)-(5-x)\big) &= 0 \\ (x-1)(3x+2-5+x) &= 0 \\
+            (x-1)(4x-3) &= 0 \\ x-1=0 &\quad\text{eller}\quad 4x-3=0 \\ x=1
+            &\quad\text{eller}\quad x=\dfrac{3}{4} \end{aligned} $$
+          </div>
+
+          <p>Likningen har to løsninger: \(x=1\) eller \(x=\dfrac{3}{4}\).</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

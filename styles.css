@@ -116,7 +116,7 @@ h3 {
   line-height: 1.25;
 }
 
-/* ---------- Texte ---------- */
+/* ---------- Texte et images ---------- */
 
 p {
   margin: 0 0 3mm;
@@ -130,7 +130,19 @@ u {
   text-underline-offset: 0.15em;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ---------- Blocs pédagogiques ---------- */
+
+.definition[data-label]::before,
+.method[data-label]::before,
+.remark[data-label]::before,
+.example[data-label]::before {
+  content: attr(data-label);
+}
 
 .definition,
 .method,
@@ -188,18 +200,6 @@ u {
   font-style: italic;
   font-weight: 700;
   line-height: 1.2;
-}
-
-.definition::before {
-  content: "Definisjon";
-}
-
-.method::before {
-  content: "Metode";
-}
-
-.remark::before {
-  content: "Merk";
 }
 
 .definition p:last-child,
@@ -438,15 +438,94 @@ th {
   }
 
   .course {
+    --print-label-safe: 3mm;
+
     width: auto;
     min-height: 0;
-    margin: 0;
+    margin: 4mm 0;
     padding: 0;
     box-shadow: none;
   }
 
+  /*
+   * Les labels dépassent normalement au-dessus de leur bloc.
+   * En impression, on crée une petite zone invisible au-dessus
+   * de la bordure visible pour éviter qu'ils soient coupés
+   * lors d'un saut de page.
+   */
+
   .definition,
-  .example,
+  .method,
+  .remark {
+    margin-top: calc(5mm - var(--print-label-safe));
+    padding-top: calc(5mm + var(--print-label-safe));
+
+    background: transparent;
+    border: 0;
+
+    break-inside: avoid;
+    isolation: isolate;
+  }
+
+  .definition::after,
+  .method::after,
+  .remark::after {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+
+    top: var(--print-label-safe);
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: var(--block-bg);
+    border: 1px solid;
+    border-radius: 3mm;
+
+    pointer-events: none;
+  }
+
+  .definition::after {
+    border-color: var(--definition-border);
+  }
+
+  .method::after {
+    border-color: var(--method-border);
+  }
+
+  .remark::after {
+    border-color: var(--remark-border);
+  }
+
+  .definition::before,
+  .method::before,
+  .remark::before {
+    top: var(--print-label-safe);
+  }
+
+  /*
+   * Même principe pour les exemples.
+   * Leur "bordure" est déjà dessinée avec ::after,
+   * donc il suffit de tout descendre ensemble.
+   */
+
+  .example {
+    margin-top: calc(6mm - var(--print-label-safe));
+    padding-top: calc(6mm + var(--print-label-safe));
+
+    break-inside: avoid;
+  }
+
+  .example::before {
+    top: var(--print-label-safe);
+  }
+
+  .example::after {
+    top: calc(4mm + var(--print-label-safe));
+  }
+
   table {
     break-inside: avoid;
   }
