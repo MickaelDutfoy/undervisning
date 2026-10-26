@@ -137,6 +137,22 @@ img {
 
 /* ---------- Blocs pédagogiques ---------- */
 
+.definition::before {
+  content: "Definisjon";
+}
+
+.method::before {
+  content: "Metode";
+}
+
+.remark::before {
+  content: "Merk";
+}
+
+.example::before {
+  content: "Eksempel";
+}
+
 .definition[data-label]::before,
 .method[data-label]::before,
 .remark[data-label]::before,
@@ -546,6 +562,10 @@ th {
     margin: 0;
     padding: 24px;
     box-shadow: none;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
   }
 
   .tree-branch {
