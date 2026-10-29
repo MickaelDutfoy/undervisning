@@ -463,13 +463,6 @@ th {
     box-shadow: none;
   }
 
-  /*
-   * Les labels dépassent normalement au-dessus de leur bloc.
-   * En impression, on crée une petite zone invisible au-dessus
-   * de la bordure visible pour éviter qu'ils soient coupés
-   * lors d'un saut de page.
-   */
-
   .definition,
   .method,
   .remark {
@@ -521,12 +514,6 @@ th {
     top: var(--print-label-safe);
   }
 
-  /*
-   * Même principe pour les exemples.
-   * Leur "bordure" est déjà dessinée avec ::after,
-   * donc il suffit de tout descendre ensemble.
-   */
-
   .example {
     margin-top: calc(6mm - var(--print-label-safe));
     padding-top: calc(6mm + var(--print-label-safe));
@@ -549,7 +536,13 @@ th {
   h1,
   h2,
   h3 {
-    break-after: avoid;
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  section > h2 + * {
+    break-before: avoid-page;
+    page-break-before: avoid;
   }
 }
 
