@@ -216,24 +216,569 @@
         </div>
       </section>
 
-<!--
-Add here quick basic unit conversion
-1m = 100cm
-1m = 1000mm
-1km = 1000m
-1kg = 1000g
-1tonn = 1000kg
-1min = 60s
-1t = 60min
-1t = 3600s
-
-Word about units ² and ³ + 1L = 1dm³
--->
-
       <section>
         <div class="section-start">
           <h2>
             <span class="section-number">2.</span>
+            <u>Omregning av enheter</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              Vi har en rekke prefikser som kan brukes foran mange måleenheter.
+              De vanligste kan organiseres i følgende tabell:
+            </p>
+
+            <div class="table-wrap">
+              <table aria-label="Generell omregningstabell fra kilo til milli">
+                <tbody>
+                  <tr>
+                    <td>kilo-</td>
+                    <td>hekto-</td>
+                    <td>deka-</td>
+                    <td></td>
+                    <td>desi-</td>
+                    <td>centi-</td>
+                    <td>milli-</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.1">
+          <p>Vi vil for eksempel gjøre om følgende lengder:</p>
+
+          <ul>
+            <li>\(3\text{ km}\) til \(\text{m}\)</li>
+            <li>\(5{,}12\text{ dm}\) til \(\text{cm}\)</li>
+            <li>\(115\text{ m}\) til \(\text{hm}\)</li>
+            <li>\(71\text{ dm}\) til \(\text{dam}\)</li>
+          </ul>
+
+          <p>Vi bruker tabellen:</p>
+
+          <div class="table-wrap">
+            <table aria-label="Omregningstabell for lengdeenheter">
+              <tbody style="font-size: small">
+                <tr>
+                  <td>kilometer</td>
+                  <td>hektometer</td>
+                  <td>dekameter</td>
+                  <td>meter</td>
+                  <td>desimeter</td>
+                  <td>centimeter</td>
+                  <td>millimeter</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>5</td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>5</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>7</td>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Legg merke til at enersifferet plasseres i kolonnen for den oppgitte
+            enheten. For \(5{,}12\text{ dm}\) plasserer vi for eksempel \(5\) i
+            desimeterkolonnen.
+          </p>
+
+          <p>
+            Når vi leser av resultatet, setter vi desimalkommaet etter sifferet
+            i kolonnen for den enheten vi ønsker svaret i. Hvis det mangler
+            sifre, fyller vi inn nuller:
+          </p>
+
+          <ul>
+            <li>\(3\text{ km} = 3\,000\text{ m}\)</li>
+            <li>\(5{,}12\text{ dm} = 51{,}2\text{ cm}\)</li>
+            <li>\(115\text{ m} = 1{,}15\text{ hm}\)</li>
+            <li>\(71\text{ dm} = 0{,}71\text{ dam}\)</li>
+          </ul>
+
+          <p>
+            I praksis kan vi si at desimalkommaet flyttes mot venstre eller
+            høyre, mens sifrene står i samme rekkefølge.
+          </p>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            Når vi gjør om arealenheter (\(\text{m}^2\)), flyttes desimalkommaet
+            to plasser for hvert trinn i tabellen. For volumenheter
+            (\(\text{m}^3\)) flyttes det tre plasser for hvert trinn. Vi kan
+            bruke følgende tabeller:
+          </p>
+
+          <div class="table-wrap">
+            <table
+              aria-label="Omregningstabell for arealenheter"
+              style="table-layout: fixed; width: 100%"
+            >
+              <tbody>
+                <tr>
+                  <td>\(\text{km}^2\)</td>
+                  <td>\(\text{hm}^2\)</td>
+                  <td>\(\text{dam}^2\)</td>
+                  <td>\(\text{m}^2\)</td>
+                  <td>\(\text{dm}^2\)</td>
+                  <td>\(\text{cm}^2\)</td>
+                  <td>\(\text{mm}^2\)</td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-wrap">
+            <table
+              aria-label="Omregningstabell for volumenheter"
+              style="table-layout: fixed; width: 100%"
+            >
+              <tbody>
+                <tr>
+                  <td>\(\text{km}^3\)</td>
+                  <td>\(\text{hm}^3\)</td>
+                  <td>\(\text{dam}^3\)</td>
+                  <td>\(\text{m}^3\)</td>
+                  <td>\(\text{dm}^3\)</td>
+                  <td>\(\text{cm}^3\)</td>
+                  <td>\(\text{mm}^3\)</td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.2">
+          <p>
+            Vi vil gjøre om \(23{,}5\text{ dm}^3\) til \(\text{m}^3\). Vi bruker
+            den andre tabellen og plasserer enersifferet \(3\) i den høyre ruten
+            i \(\text{dm}^3\)-kolonnen.
+          </p>
+
+          <div class="table-wrap">
+            <table
+              aria-label="Omregning av 23,5 kubikkdesimeter til kubikkmeter"
+              style="table-layout: fixed; width: 100%"
+            >
+              <tbody>
+                <tr>
+                  <td>\(\text{km}^3\)</td>
+                  <td>\(\text{hm}^3\)</td>
+                  <td>\(\text{dam}^3\)</td>
+                  <td>\(\text{m}^3\)</td>
+                  <td>\(\text{dm}^3\)</td>
+                  <td>\(\text{cm}^3\)</td>
+                  <td>\(\text{mm}^3\)</td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444">2</span>
+                      <span style="border-left: 1px solid #444">3</span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span>5</span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+
+                  <td style="padding: 0">
+                    <div
+                      style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        height: 10mm;
+                      "
+                    >
+                      <span></span>
+                      <span style="border-left: 1px solid #444"></span>
+                      <span style="border-left: 1px solid #444"></span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Når vi leser av verdien i \(\text{m}^3\), fyller vi inn nullene som
+            mangler. Da får vi \(23{,}5\text{ dm}^3 = 0{,}0235\text{ m}^3\).
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Noen omregninger brukes oftere enn andre, og det er praktisk å kunne
+            dem uten å bruke tabellen hver gang. De viktigste er:
+          </p>
+
+          <ul>
+            <li>\(1\text{ m} = 100\text{ cm}\)</li>
+            <li>\(1\text{ m} = 1000\text{ mm}\)</li>
+            <li>\(1\text{ km} = 1000\text{ m}\)</li>
+            <li>\(1\text{ kg} = 1000\text{ g}\)</li>
+            <li>\(1\text{ tonn} = 1000\text{ kg}\)</li>
+            <li>\(1\text{ min} = 60\text{ s}\)</li>
+            <li>\(1\text{ t} = 60\text{ min}\)</li>
+            <li>\(1\text{ t} = 3600\text{ s}\)</li>
+            <li>\(1\text{ L} = 1\text{ dm}^3\)</li>
+          </ul>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.3">
+          <p>
+            Vi vil gjøre om \(1\text{ m}^3\) til centiliter (\(\text{cL}\)).
+          </p>
+
+          <p>
+            Vi vet at \(1\text{ m} = 10\text{ dm}\). Dermed får vi \(1\text{
+            m}^3 = (10\text{ dm})^3 = 1000\text{ dm}^3\). Siden \(1\text{ dm}^3
+            = 1\text{ L}\), betyr det at \(1\text{ m}^3 = 1000\text{ L}\).
+          </p>
+
+          <p>
+            Siden \(1\text{ L} = 100\text{ cL}\), får vi til slutt \(1\text{
+            m}^3 = 100\,000\text{ cL}\).
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">3.</span>
             <u>Kryssmultiplikasjon</u>
           </h2>
 
@@ -245,7 +790,7 @@ Word about units ² and ³ + 1L = 1dm³
           </div>
         </div>
 
-        <div class="example" data-label="Eksempel 2.1">
+        <div class="example" data-label="Eksempel 3.1">
           <p>
             Hvis kiloprisen ikke endrer seg, er prisen og vekten på eplene
             proporsjonale: Hvis 1 kg koster 40 kr, koster 2 kg 80 kr og 5 kg 200
@@ -294,7 +839,7 @@ Word about units ² and ³ + 1L = 1dm³
           </p>
         </div>
 
-        <div class="example" data-label="Eksempel 2.2">
+        <div class="example" data-label="Eksempel 3.2">
           <p>Vi vil gjøre om 23 kg til tonn. Vi vet at 1 tonn = 1000 kg.</p>
 
           <div class="table-wrap">
@@ -322,7 +867,7 @@ Word about units ² and ³ + 1L = 1dm³
           <p>Vi har altså \(23\text{ kg} = 0{,}023\text{ tonn}\).</p>
         </div>
 
-        <div class="example" data-label="Eksempel 2.3">
+        <div class="example" data-label="Eksempel 3.3">
           <p>En bil kjører i 80 km/t. Vi vil gjøre om farten til m/s.</p>
           <p>
             Først gjør vi om enhetene: \(80\text{ km} = 80\,000\text{ m}\) og
@@ -368,7 +913,7 @@ Word about units ² and ³ + 1L = 1dm³
           </p>
         </div>
 
-        <div class="example" data-label="Eksempel 2.4">
+        <div class="example" data-label="Eksempel 3.4">
           <p>
             Et sauefjøs har plass til \(72\) søyer. For øyeblikket er det \(47\)
             søyer i fjøset. Vi vil finne hvor stor prosentandel av kapasiteten

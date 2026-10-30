@@ -306,7 +306,7 @@ img {
 }
 
 table {
-  margin: 0 auto;
+  margin: 0 auto 3mm;
   border-collapse: collapse;
   text-align: center;
   break-inside: avoid;
