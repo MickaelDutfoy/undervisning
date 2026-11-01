@@ -72,12 +72,10 @@ h1 {
   width: fit-content;
   margin: 0 auto 10mm;
   padding-bottom: 2.5mm;
-
   color: var(--heading);
   font-size: 26pt;
   font-weight: 700;
   line-height: 1.1;
-
   border-bottom: 2px solid var(--heading-underline);
 }
 
@@ -94,16 +92,12 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   min-width: 8mm;
   height: 8mm;
   margin-right: 2mm;
-
   background: var(--accent-soft);
   color: var(--accent);
-
   border-radius: 50%;
-
   font-size: 11pt;
   font-weight: 700;
 }
