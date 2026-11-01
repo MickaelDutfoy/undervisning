@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" role="img" aria-labelledby="t d">
+  <title id="t">Grafen til g(x)=-x/3</title>
+  <desc id="d">Koordinatsystem med den rette linjen y=-x/3 gjennom origo.</desc>
+  <rect width="600" height="500" fill="white"/>
+  <defs>
+    <pattern id="grid" width="28.889" height="28.571" patternUnits="userSpaceOnUse">
+      <path d="M 28.889 0 L 0 0 0 28.571" fill="none" stroke="#d9dde1" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect x="50" y="50" width="520" height="400" fill="url(#grid)" stroke="#c5cbd1"/>
+  <line x1="281.1" y1="50" x2="281.1" y2="450" stroke="#59636b" stroke-width="2"/>
+  <line x1="50" y1="250" x2="570" y2="250" stroke="#59636b" stroke-width="2"/>
+  <line x1="50" y1="173.8" x2="570" y2="345.2" stroke="#c96f74" stroke-width="3"/>
+  <circle cx="281.1" cy="250" r="4" fill="#c96f74"/>
+  <circle cx="367.8" cy="278.6" r="4" fill="#c96f74"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#59636b">
+    <text x="560" y="242">x</text><text x="288" y="64">y</text><text x="269" y="268">0</text>
+    <text x="310" y="268">1</text><text x="339" y="268">2</text><text x="368" y="268">3</text><text x="397" y="268">4</text><text x="426" y="268">5</text><text x="455" y="268">6</text><text x="484" y="268">7</text><text x="513" y="268">8</text><text x="542" y="268">9</text><text x="556" y="268">10</text>
+    <text x="261" y="221">1</text><text x="261" y="193">2</text><text x="261" y="164">3</text><text x="261" y="136">4</text><text x="261" y="107">5</text><text x="261" y="78">6</text><text x="261" y="54">7</text>
+    <text x="253" y="279">-1</text><text x="253" y="307">-2</text><text x="253" y="336">-3</text><text x="253" y="364">-4</text><text x="253" y="393">-5</text><text x="253" y="421">-6</text><text x="253" y="449">-7</text>
+  </g>
+  <text x="430" y="320" font-family="Arial, sans-serif" font-size="15" fill="#a64f55">g(x)=−x/3</text>
+</svg>
