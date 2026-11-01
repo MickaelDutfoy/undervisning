@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <title>Lineære funksjoner</title>
+
+    <!-- KaTeX : bare det som trengs for å skrive matematikk med LaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Lineære funksjoner</h1>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">1.</span>
+            <u>Proporsjonale funksjoner</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              En proporsjonal funksjon er en funksjon på formen
+              \(f(x)=a\cdot x\), der \(a\) er et gitt tall.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.1">
+          <p>
+            \(f(x)=3x\), \(g(x)=-2{,}5x\) og
+            \(h(x)=\dfrac{x}{3}=\dfrac{1}{3}x\) er proporsjonale funksjoner.
+          </p>
+        </div>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            I uttrykket \(f(x)=a\cdot x\) kalles tallet \(a\)
+            <strong>stigningstallet</strong> til funksjonen.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.2">
+          <p>
+            I eksemplene ovenfor er stigningstallet til \(f\) lik \(3\),
+            stigningstallet til \(g\) lik \(-2{,}5\), og stigningstallet til
+            \(h\) lik \(\dfrac{1}{3}\), siden det å dele på \(3\) er det samme
+            som å multiplisere med \(\dfrac{1}{3}\).
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">2.</span>
+            <u>Lineære funksjoner</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              En lineær funksjon er en funksjon på formen \(f(x)=a\cdot x+b\),
+              der \(a\) og \(b\) er gitte tall.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.1">
+          <p>
+            \(f(x)=3x+7\), \(g(x)=\dfrac{x}{2}-3=\dfrac{1}{2}x-3\) og
+            \(h(x)=-3(x+2)=-3x-6\) er lineære funksjoner.
+          </p>
+        </div>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            I uttrykket \(f(x)=a\cdot x+b\) kalles \(a\)
+            <strong>stigningstallet</strong> til funksjonen, og \(b\) kalles
+            <strong>konstantleddet</strong>. Grafen skjærer \(y\)-aksen når
+            \(x=0\), altså ved \(y=b\).
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.2">
+          <p>
+            I eksemplene ovenfor er stigningstallene henholdsvis \(3\),
+            \(\dfrac{1}{2}\) og \(-3\). Konstantleddene er henholdsvis \(7\),
+            \(-3\) og \(-6\).
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            En proporsjonal funksjon er et spesielt tilfelle av en lineær
+            funksjon der konstantleddet er lik null.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">3.</span>
+            <u>Regnemetoder</u>
+          </h2>
+
+          <div class="remark" data-label="Husk">
+            <p>
+              \(x\)-verdiene er tallene vi setter inn i funksjonen.
+              Funksjonsverdiene, \(f(x)\), er tallene vi får ut.
+            </p>
+          </div>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å finne funksjonsverdien til et gitt tall i en funksjon \(f\),
+            erstatter vi \(x\) med dette tallet i funksjonsuttrykket.
+          </p>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å finne hvilken \(x\)-verdi som gir en bestemt funksjonsverdi,
+            løser vi en likning ved hjelp av funksjonsuttrykket.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 3.1">
+          <p>La \(f(x)=-2x+5\).</p>
+          <p>
+            Funksjonsverdien når \(x=3\), er
+            \(f(3)=-2\cdot3+5=-6+5=-1\).
+          </p>
+          <p>
+            For å finne \(x\)-verdien som gir funksjonsverdien \(7\), løser vi
+            \(f(x)=7\), altså \(-2x+5=7\). Dermed får vi \(-2x=2\), og
+            \(x=-1\).
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Disse metodene gjelder uansett hvilken type funksjon vi arbeider
+            med. For å beregne en funksjonsverdi kan vi sette inn en verdi for
+            \(x\) i hvilket som helst uttrykk. For å finne en \(x\)-verdi må vi
+            derimot kunne løse likningen vi får, og det kan vi bare gjøre for
+            enkelte typer funksjoner.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">4.</span>
+            <u>Grafer</u>
+          </h2>
+
+          <div class="method" data-label="Metode">
+            <p>
+              Grafen til en lineær funksjon er en rett linje. For å tegne den
+              trenger vi to punkter som linjen går gjennom. Vi kan bruke
+              konstantleddet og stigningstallet.
+            </p>
+            <ul>
+              <li>
+                Vi plasserer konstantleddet på \(y\)-aksen. For en proporsjonal
+                funksjon er konstantleddet \(0\), så grafen går gjennom origo.
+              </li>
+              <li>
+                Fra dette punktet går vi én enhet mot høyre og så opp, hvis
+                stigningstallet er positivt, eller ned, hvis det er negativt,
+                med så mange enheter som stigningstallet angir.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 4.1">
+          <p>Vi tegner grafen til funksjonen \(f(x)=2x-7\).</p>
+          <img
+            src="./assets/figure-1.png"
+            alt="Grafen til den lineære funksjonen f(x) = 2x - 7"
+          />
+          <p>
+            Vi plasserer konstantleddet \(-7\) på \(y\)-aksen. Derfra går vi
+            én enhet mot høyre og bruker stigningstallet: Vi går to enheter opp.
+            Vi kan gjenta dette for å få flere punkter og tegne linjen mer
+            nøyaktig.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 4.2">
+          <p>Vi tegner grafen til funksjonen \(g(x)=-\dfrac{x}{3}\).</p>
+          <img
+            src="./assets/figure-2.png"
+            alt="Grafen til den proporsjonale funksjonen g(x) = -x/3"
+          />
+          <p>
+            Konstantleddet er \(0\), så vi starter i origo. Derfra går vi én
+            enhet mot høyre og bruker stigningstallet, altså går vi
+            \(\dfrac{1}{3}\) enhet ned. Siden dette er lite presist, kan vi
+            gjenta bevegelsen tre ganger: tre enheter mot høyre og én enhet ned.
+            Slik kan vi plassere flere punkter og tegne linjen mer nøyaktig.
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Når stigningstallet er en brøk, blir grafen mer presis hvis vi går
+            like mange enheter mot høyre som nevneren og like mange enheter opp
+            eller ned som telleren.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
