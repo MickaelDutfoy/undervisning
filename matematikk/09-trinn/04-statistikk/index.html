@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <title>Statistikk</title>
+
+    <!-- KaTeX : bare det som trengs for å skrive matematikk med LaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Statistikk</h1>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">1.</span>
+            <u>Begreper og repetisjon</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              Et <strong>datasett</strong> er en samling verdier som kommer fra
+              en statistisk undersøkelse. Antallet verdier i datasettet kalles
+              <strong>antall observasjoner</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.1">
+          <p>
+            Vi registrerer resultatene til en klasse på en prøve. Vi får disse
+            karakterene:
+          </p>
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            &12;\ 9;\ 17;\ 14;\ 3;\ 7;\ 12;\ 18;\ 15;\ 11;\ 8;\ 7;\ 14;\\
+            &11;\ 4;\ 7;\ 15;\ 19;\ 2;\ 5;\ 13;\ 18;\ 10
+            \end{aligned}
+            $$
+          </div>
+          <p>Det er til sammen 23 verdier, altså 23 observasjoner.</p>
+        </div>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            <strong>Variasjonsbredden</strong> i et datasett er forskjellen
+            mellom den største og den minste verdien.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.2">
+          <p>I eksemplet ovenfor er variasjonsbredden \(19-2=17\).</p>
+        </div>
+
+        <div class="remark" data-label="Husk">
+          <p>
+            <strong>Gjennomsnittet</strong> i et datasett er summen av alle
+            verdiene delt på antall observasjoner.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.3">
+          <p>I eksemplet ovenfor regner vi ut gjennomsnittet slik:</p>
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            &\dfrac{12+9+17+14+3+7+12+18+15+11+8+7+14}{23}\\
+            &\qquad+\dfrac{11+4+7+15+19+2+5+13+18+10}{23}\\
+            &=\dfrac{251}{23}\approx10{,}9
+            \end{aligned}
+            $$
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">2.</span>
+            <u>Median</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              <strong>Medianen</strong> i et datasett er verdien som deler det
+              ordnede datasettet i to deler med like mange observasjoner.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.1">
+          <p>
+            Vi bruker igjen karakterene fra det første eksemplet. For å finne
+            medianen må vi først ordne verdiene, vanligvis i stigende rekkefølge:
+          </p>
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            &2;\ 3;\ 4;\ 5;\ 7;\ 7;\ 7;\ 8;\ 9;\ 10;\ 11;\ 11;\ 12;\\
+            &12;\ 13;\ 14;\ 14;\ 15;\ 15;\ 17;\ 18;\ 18;\ 19
+            \end{aligned}
+            $$
+          </div>
+          <p>
+            Hvis datasettet har et oddetall antall verdier, er medianen den
+            midterste verdien. Her er medianen derfor \(11\).
+          </p>
+          <p>
+            Tenk deg nå at en elev som var borte, tar prøven senere og får
+            \(12\). Da blir det 24 observasjoner, og datasettet blir:
+          </p>
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            &2;\ 3;\ 4;\ 5;\ 7;\ 7;\ 7;\ 8;\ 9;\ 10;\ 11;\ 11;\ 12;\ 12;\\
+            &12;\ 13;\ 14;\ 14;\ 15;\ 15;\ 17;\ 18;\ 18;\ 19
+            \end{aligned}
+            $$
+          </div>
+          <p>
+            Hvis datasettet har et partall antall verdier, er medianen
+            gjennomsnittet av de to midterste verdiene. Her blir medianen
+            \(\dfrac{11+12}{2}=11{,}5\).
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Gjennomsnitt og median er vanligvis ikke like, og de beskriver ikke
+            det samme. De må ikke blandes sammen.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.2">
+          <p>Se oppgave 1.2.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">3.</span>
+            <u>Vektet gjennomsnitt</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              Et <strong>vektet gjennomsnitt</strong> finner vi ved å
+              multiplisere hver verdi med en frekvens eller en vekt, summere
+              resultatene og dele på summen av frekvensene eller vektene.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 3.1">
+          <p>
+            Alice har fått disse åtte karakterene i løpet av første termin:
+            \(17\) med vekt 1, \(14\) med vekt 1, \(16\) med vekt 1,
+            \(14{,}5\) med vekt 3, to ganger \(20\) med vekt 1, \(18\) med
+            vekt 1 og \(17\) med vekt 3. Vi kan regne ut gjennomsnittet slik:
+          </p>
+          <div class="math-display">
+            $$
+            \dfrac{17\cdot1+14\cdot1+16\cdot1+14{,}5\cdot3+20\cdot1+20\cdot1+18\cdot1+17\cdot3}{1+1+1+3+1+1+1+3}
+            =\dfrac{199{,}5}{12}=16{,}625\approx16{,}6
+            $$
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 3.2">
+          <p>
+            Vi spør 23 elever hvor mange søsken de har, og samler svarene i en
+            tabell:
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Antall søsken</th>
+                  <th>0</th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Antall elever</th>
+                  <td>6</td>
+                  <td>9</td>
+                  <td>6</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            En elev har dermed i gjennomsnitt
+            \(\dfrac{0\cdot6+1\cdot9+2\cdot6+3\cdot2}{23}\approx1{,}17\)
+            søsken.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">4.</span>
+            <u>Økning og reduksjon med prosent</u>
+          </h2>
+
+          <div class="remark" data-label="Husk">
+            <p>
+              Å skrive en brøk som prosent betyr å skrive den som en likeverdig
+              brøk med nevner \(100\).
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 4.1">
+          <p>
+            I en klasse med 29 elever er 16 jenter. Andelen jenter er
+            \(\dfrac{16}{29}\approx\dfrac{55{,}2}{100}\), altså omtrent
+            \(55{,}2\%\). Vi får \(55{,}2\) ved kryssmultiplikasjon:
+            \(16\cdot100\div29\).
+          </p>
+        </div>
+
+        <div class="remark" data-label="Husk">
+          <p>
+            Å regne ut en brøkdel, og dermed også en prosentdel, av en mengde
+            betyr å multiplisere brøken med mengden.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 4.2">
+          <p>
+            I et maraton med 1900 deltakere fullfører \(80\%\) løpet. Antallet
+            deltakere som fullfører, er derfor
+            \(\dfrac{80}{100}\cdot1900=1520\).
+          </p>
+        </div>
+
+        <div class="definition" data-label="Egenskap">
+          <p>
+            Å øke en mengde \(x\) med \(a\%\) betyr å regne
+            \(x+\dfrac{a}{100}\cdot x\). På samme måte betyr det å redusere
+            \(x\) med \(a\%\) å regne \(x-\dfrac{a}{100}\cdot x\).
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 4.3">
+          <p>
+            En vare som koster \(70\text{ €}\), settes ned med \(20\%\) under
+            salget. Den nye prisen er derfor
+            \(70-\dfrac{20}{100}\cdot70=56\text{ €}\).
+          </p>
+        </div>
+
+        <div class="definition" data-label="Definisjon">
+          <p>Fra noen eksempler kan vi se et mønster. Å øke:</p>
+          <ul>
+            <li>med \(30\%\) betyr å multiplisere med \(1{,}30\).</li>
+            <li>med \(75\%\) betyr å multiplisere med \(1{,}75\).</li>
+            <li>med \(8\%\) betyr å multiplisere med \(1{,}08\).</li>
+          </ul>
+          <p>På samme måte betyr det å redusere:</p>
+          <ul>
+            <li>med \(20\%\) å multiplisere med \(0{,}80\).</li>
+            <li>med \(40\%\) å multiplisere med \(0{,}60\).</li>
+            <li>med \(3\%\) å multiplisere med \(0{,}97\).</li>
+          </ul>
+          <p>Dette tallet kalles vanligvis <strong>vekstfaktor</strong>.</p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Alle disse situasjonene kan begrunnes ved å forenkle
+            bokstavuttrykk:
+          </p>
+          <div class="math-display">
+            $$
+            x+\dfrac{30}{100}\cdot x=x+0{,}30x=1{,}30x,
+            \qquad
+            x-\dfrac{3}{100}\cdot x=x-0{,}03x=0{,}97x.
+            $$
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
