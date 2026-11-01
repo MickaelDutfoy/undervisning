@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Grafen til f(x)=2x-7</title>
+  <desc id="desc">Koordinatsystem med den rette linjen f(x)=2x-7.</desc>
+  <rect width="760" height="560" fill="white"/>
+  <g stroke="#d9dde1" stroke-width="1">
+    <path d="M70 40V500M110 40V500M150 40V500M190 40V500M230 40V500M270 40V500M310 40V500M350 40V500M390 40V500M430 40V500M470 40V500M510 40V500M550 40V500M590 40V500M630 40V500M670 40V500M710 40V500"/>
+    <path d="M70 60H710M70 100H710M70 140H710M70 180H710M70 220H710M70 260H710M70 300H710M70 340H710M70 380H710M70 420H710M70 460H710M70 500H710"/>
+  </g>
+  <g stroke="#333" stroke-width="2">
+    <path d="M70 220H710"/>
+    <path d="M270 40V500"/>
+  </g>
+  <g fill="#333" font-family="Georgia, 'Times New Roman', serif" font-size="18">
+    <text x="698" y="211">x</text>
+    <text x="280" y="57">y</text>
+    <text x="256" y="242">0</text>
+    <text x="304" y="242">1</text>
+    <text x="344" y="242">2</text>
+    <text x="384" y="242">3</text>
+    <text x="424" y="242">4</text>
+    <text x="464" y="242">5</text>
+    <text x="504" y="242">6</text>
+    <text x="544" y="242">7</text>
+    <text x="584" y="242">8</text>
+    <text x="624" y="242">9</text>
+    <text x="658" y="242">10</text>
+    <text x="230" y="242">−1</text>
+    <text x="190" y="242">−2</text>
+    <text x="150" y="242">−3</text>
+    <text x="110" y="242">−4</text>
+    <text x="70" y="242">−5</text>
+  </g>
+  <g fill="#555" font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="end">
+    <text x="260" y="185">1</text><text x="260" y="145">2</text><text x="260" y="105">3</text><text x="260" y="65">4</text>
+    <text x="260" y="265">−1</text><text x="260" y="305">−2</text><text x="260" y="345">−3</text><text x="260" y="385">−4</text><text x="260" y="425">−5</text><text x="260" y="465">−6</text><text x="260" y="505">−7</text>
+  </g>
+  <path d="M250 520L510 0" stroke="#4f8b67" stroke-width="4" fill="none"/>
+  <circle cx="270" cy="500" r="5" fill="#4f8b67"/>
+  <circle cx="310" cy="420" r="5" fill="#4f8b67"/>
+  <text x="520" y="65" fill="#355f47" font-family="Georgia, 'Times New Roman', serif" font-size="22">f(x)=2x−7</text>
+</svg>
