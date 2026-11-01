@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <title>Addisjon og sammenligning av brøker</title>
+
+    <!-- KaTeX : bare det som trengs for å skrive matematikk med LaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Addisjon og sammenligning av brøker</h1>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">1.</span>
+            <u>Addisjon av brøker</u>
+          </h2>
+
+          <div class="remark" data-label="Husk">
+            <p>
+              Vi kan multiplisere eller dividere telleren og nevneren i en brøk
+              med det samme tallet uten å endre brøkens verdi.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.1">
+          <div class="math-display">
+            $$ \dfrac{2}{9}=\dfrac{2\cdot4}{9\cdot4}=\dfrac{8}{36} $$
+          </div>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å addere eller subtrahere to brøker må vi først skrive dem med
+            samme nevner. Da bruker vi egenskapen ovenfor. Deretter adderer eller
+            subtraherer vi tellerne og beholder den felles nevneren.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.2">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            \dfrac{3}{15}+\dfrac{4}{15}&=\dfrac{7}{15}\\[0.5em]
+            \dfrac{23}{36}-\dfrac{2}{9}
+            &=\dfrac{23}{36}-\dfrac{2\cdot4}{9\cdot4}\\
+            &=\dfrac{23}{36}-\dfrac{8}{36}\\
+            &=\dfrac{15}{36}
+            =\dfrac{3\cdot5}{3\cdot12}
+            =\dfrac{5}{12}
+            \end{aligned}
+            $$
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            En konkret måte å huske at bare tellerne adderes på: Hvis jeg spiser
+            \(\dfrac{1}{3}\) av en kake og deretter enda \(\dfrac{1}{3}\), har
+            jeg til sammen spist
+            \(\dfrac{1}{3}+\dfrac{1}{3}=\dfrac{2}{3}\) av kaken. Nevneren har
+            ikke endret seg.
+          </p>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            Hvis vi ikke kan endre bare én av brøkene for å få samme nevner,
+            må vi endre begge. Da leter vi etter et tall som er et multiplum av
+            begge de opprinnelige nevnerne.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.3">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            \dfrac{1}{4}+\dfrac{5}{6}
+            &=\dfrac{1\cdot3}{4\cdot3}+\dfrac{5\cdot2}{6\cdot2}\\
+            &=\dfrac{3}{12}+\dfrac{10}{12}
+            =\dfrac{13}{12}\\[0.8em]
+            \dfrac{13}{22}+\dfrac{27}{33}
+            &=\dfrac{13\cdot3}{22\cdot3}+\dfrac{27\cdot2}{33\cdot2}\\
+            &=\dfrac{39}{66}+\dfrac{54}{66}
+            =\dfrac{93}{66}\\
+            &=\dfrac{93\div3}{66\div3}
+            =\dfrac{31}{22}
+            \end{aligned}
+            $$
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            I verste fall kan vi multiplisere teller og nevner i hver brøk med
+            nevneren til den andre brøken.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.4">
+          <div class="math-display">
+            $$
+            \dfrac{1}{9}+\dfrac{1}{11}
+            =\dfrac{1\cdot11}{9\cdot11}+\dfrac{1\cdot9}{11\cdot9}
+            =\dfrac{11}{99}+\dfrac{9}{99}
+            =\dfrac{20}{99}
+            $$
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">2.</span>
+            <u>Sammenligning av brøker</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              Å sammenligne to tall betyr å avgjøre hvilket som er størst,
+              hvilket som er minst, eller om de er like.
+            </p>
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Det er enkelt å sammenligne to desimaltall som \(1{,}5\) og \(2\),
+            eller to enkle brøker som \(\dfrac{2}{5}\) og \(\dfrac{4}{5}\).
+            Det blir langt mindre åpenbart med brøker som
+            \(\dfrac{489}{729}\) og \(\dfrac{577}{809}\).
+          </p>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å sammenligne to brøker kan vi skrive dem med samme nevner. Da
+            er den største brøken den som har størst teller.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.1">
+          <p>Vi vil sammenligne \(\dfrac{3}{4}\) og \(\dfrac{5}{7}\).</p>
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            \dfrac{3}{4}&=\dfrac{3\cdot7}{4\cdot7}=\dfrac{21}{28}\\
+            \dfrac{5}{7}&=\dfrac{5\cdot4}{7\cdot4}=\dfrac{20}{28}\\
+            \dfrac{21}{28}&>\dfrac{20}{28}
+            \quad\text{derfor}\quad
+            \dfrac{3}{4}>\dfrac{5}{7}
+            \end{aligned}
+            $$
+          </div>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            Hvis det er vanskelig å finne en felles nevner, kan vi begynne å
+            utføre divisjonene som brøkene representerer, og sammenligne
+            kvotientene.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.2">
+          <p>\(\dfrac{9}{26}\) og \(\dfrac{14}{44}\).</p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Hvis telleren i en brøk er større enn nevneren, er brøken større enn
+            \(1\). Omvendt er brøken mindre enn \(1\) hvis nevneren er større
+            enn telleren.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
