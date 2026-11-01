@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Grafen til g(x)=-x/3</title>
+  <desc id="desc">Koordinatsystem med den rette linjen g(x)=-x/3.</desc>
+  <rect width="760" height="520" fill="white"/>
+  <g stroke="#d9dde1" stroke-width="1">
+    <path d="M60 40V460M100 40V460M140 40V460M180 40V460M220 40V460M260 40V460M300 40V460M340 40V460M380 40V460M420 40V460M460 40V460M500 40V460M540 40V460M580 40V460M620 40V460M660 40V460M700 40V460"/>
+    <path d="M60 60H700M60 100H700M60 140H700M60 180H700M60 220H700M60 260H700M60 300H700M60 340H700M60 380H700M60 420H700M60 460H700"/>
+  </g>
+  <g stroke="#333" stroke-width="2">
+    <path d="M60 260H700"/>
+    <path d="M380 40V460"/>
+  </g>
+  <g fill="#333" font-family="Georgia, 'Times New Roman', serif" font-size="18">
+    <text x="688" y="251">x</text>
+    <text x="390" y="58">y</text>
+    <text x="365" y="283">0</text>
+    <text x="416" y="283">1</text><text x="456" y="283">2</text><text x="496" y="283">3</text><text x="536" y="283">4</text><text x="576" y="283">5</text><text x="616" y="283">6</text><text x="656" y="283">7</text>
+    <text x="328" y="283">−1</text><text x="288" y="283">−2</text><text x="248" y="283">−3</text><text x="208" y="283">−4</text><text x="168" y="283">−5</text><text x="128" y="283">−6</text><text x="88" y="283">−7</text>
+  </g>
+  <g fill="#555" font-family="Georgia, 'Times New Roman', serif" font-size="16" text-anchor="end">
+    <text x="370" y="225">1</text><text x="370" y="185">2</text><text x="370" y="145">3</text><text x="370" y="105">4</text><text x="370" y="65">5</text>
+    <text x="370" y="305">−1</text><text x="370" y="345">−2</text><text x="370" y="385">−3</text><text x="370" y="425">−4</text><text x="370" y="465">−5</text>
+  </g>
+  <path d="M60 153.333L700 366.667" stroke="#b65f61" stroke-width="4" fill="none"/>
+  <circle cx="380" cy="260" r="5" fill="#b65f61"/>
+  <circle cx="500" cy="300" r="5" fill="#b65f61"/>
+  <text x="510" y="335" fill="#874548" font-family="Georgia, 'Times New Roman', serif" font-size="22">g(x)=−x/3</text>
+</svg>
