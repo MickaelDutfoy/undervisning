@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="t d">
+  <title id="t">Grafen til f(x)=2x-7</title>
+  <desc id="d">Koordinatsystem med den rette linjen y=2x-7.</desc>
+  <rect width="600" height="600" fill="white"/>
+  <defs>
+    <pattern id="grid" width="34.667" height="37.143" patternUnits="userSpaceOnUse">
+      <path d="M 34.667 0 L 0 0 0 37.143" fill="none" stroke="#d9dde1" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect x="50" y="50" width="520" height="520" fill="url(#grid)" stroke="#c5cbd1"/>
+  <line x1="223.3" y1="50" x2="223.3" y2="570" stroke="#59636b" stroke-width="2"/>
+  <line x1="50" y1="198.6" x2="570" y2="198.6" stroke="#59636b" stroke-width="2"/>
+  <line x1="171.3" y1="570" x2="413.3" y2="50" stroke="#4e9b67" stroke-width="3"/>
+  <circle cx="223.3" cy="458.6" r="4" fill="#4e9b67"/>
+  <circle cx="258" cy="384.3" r="4" fill="#4e9b67"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#59636b">
+    <text x="560" y="191">x</text><text x="230" y="64">y</text><text x="210" y="217">0</text>
+    <text x="252" y="217">1</text><text x="287" y="217">2</text><text x="322" y="217">3</text><text x="356" y="217">4</text><text x="391" y="217">5</text><text x="426" y="217">6</text><text x="461" y="217">7</text><text x="495" y="217">8</text><text x="530" y="217">9</text><text x="552" y="217">10</text>
+    <text x="199" y="164">1</text><text x="199" y="127">2</text><text x="199" y="90">3</text><text x="199" y="53">4</text>
+    <text x="192" y="238">-1</text><text x="192" y="275">-2</text><text x="192" y="312">-3</text><text x="192" y="350">-4</text><text x="192" y="387">-5</text><text x="192" y="424">-6</text><text x="192" y="461">-7</text><text x="192" y="498">-8</text><text x="192" y="535">-9</text><text x="185" y="568">-10</text>
+  </g>
+  <text x="405" y="78" font-family="Arial, sans-serif" font-size="15" fill="#356f49">f(x)=2x−7</text>
+</svg>
