@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <title>Aritmetikk</title>
+
+    <!-- KaTeX : bare det som trengs for å skrive matematikk med LaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Aritmetikk</h1>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">1.</span>
+            <u>Delbarhetsregler</u>
+          </h2>
+
+          <div class="definition" data-label="Egenskap">
+            <p>Et tall er delelig med:</p>
+            <ul>
+              <li>\(2\) hvis det er et partall.</li>
+              <li>\(3\) hvis summen av sifrene er delelig med \(3\).</li>
+              <li>
+                \(4\) hvis tallet som dannes av de to siste sifrene, er et
+                multiplum av \(4\).
+              </li>
+              <li>\(5\) hvis enerplassen er \(0\) eller \(5\).</li>
+              <li>\(9\) hvis summen av sifrene er delelig med \(9\).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.1">
+          <p>
+            \(785\) er ikke delelig med \(3\), fordi \(7+8+5=20\) og \(20\)
+            ikke er delelig med \(3\).
+          </p>
+          <p>
+            \(7516\) er delelig med \(4\), fordi \(16\) er et multiplum av
+            \(4\).
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">2.</span>
+            <u>Primtall</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              Et tall som bare er delelig med \(1\) og seg selv, kalles et
+              primtall.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.1">
+          <p>
+            \(19\) er bare delelig med \(1\) og \(19\). Det er derfor et
+            primtall.
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Primtallene som er mindre enn \(25\), er \(2\), \(3\), \(5\),
+            \(7\), \(11\), \(13\), \(17\), \(19\) og \(23\). Å kjenne dem kan
+            gjøre det lettere å lete etter divisorer i flere sammenhenger.
+          </p>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å undersøke om et tall \(n\) er et primtall, prøver vi å finne
+            en divisor som er forskjellig fra \(1\) og tallet selv.
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Det er nok å lete etter en divisor blant primtallene. Hvis et tall
+            for eksempel ikke er delelig med \(2\), kan det heller ikke være
+            delelig med \(4\), \(6\) og så videre. Dessuten trenger vi ikke å
+            lete etter divisorer som er større enn \(\sqrt{n}\).
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.2">
+          <p>
+            Vi vil undersøke om \(233\) er et primtall. Det er nok å lete etter
+            primtallsdivisorer som er mindre enn
+            \(\sqrt{233}\approx15{,}3\), altså blant \(2\), \(3\), \(5\),
+            \(7\), \(11\) og \(13\).
+          </p>
+          <p>
+            For \(2\), \(3\) og \(5\) bruker vi delbarhetsreglene. For \(7\),
+            \(11\) og \(13\) kan vi teste med kalkulator. \(233\) er ikke
+            delelig med noen av disse tallene, og er derfor et primtall.
+          </p>
+        </div>
+
+        <div class="definition" data-label="Egenskap">
+          <p>
+            Hvis et tall ikke er et primtall, kan det skrives som et produkt av
+            primtallsfaktorer.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.3">
+          <p>
+            \(4620\) er ikke et primtall: Det er delelig med \(2\). Vi kan
+            derfor skrive \(4620=2\cdot2310\).
+          </p>
+          <p>
+            \(2310\) er heller ikke et primtall, siden det også er delelig med
+            \(2\). Dermed får vi
+            \(2310=2\cdot1155\), og altså \(4620=2\cdot2\cdot1155\).
+            \(1155\) er igjen ikke et primtall, siden det er delelig med \(5\),
+            og slik fortsetter vi.
+          </p>
+          <p>
+            Til slutt får vi
+            \(4620=2\cdot2\cdot3\cdot5\cdot7\cdot11\).
+          </p>
+        </div>
+
+        <div class="definition" data-label="Egenskap">
+          <p>
+            Listen over divisorene til et tall består av \(1\) og alle
+            produktene vi kan få ved å kombinere faktorene i
+            primtallsfaktoriseringen.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.4">
+          <p>
+            Primtallsfaktoriseringen av \(126\) er
+            \(2\cdot3\cdot3\cdot7\). \(126\) er derfor delelig med:
+          </p>
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            &1;\ 2;\ 3:7;\ 2\cdot3;\ 2\cdot7;\ 3\cdot3;\ 3\cdot7;\\
+            &2\cdot3\cdot3;\ 2\cdot3\cdot7;\ 3\cdot3\cdot7;\
+            2\cdot3\cdot3\cdot7
+            \end{aligned}
+            $$
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">3.</span>
+            <u>Felles faktorer og største felles faktor</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              Hvis to tall \(a\) og \(b\) begge er delelige med det samme
+              tallet \(k\), sier vi at \(k\) er en felles faktor for \(a\) og
+              \(b\).
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 3.1">
+          <p>
+            \(5\) er en felles faktor for \(75\) og \(225\), noe vi kan se ved
+            hjelp av delbarhetsregelen.
+          </p>
+        </div>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            To tall \(a\) og \(b\) har alltid minst én felles faktor, men de
+            kan ha flere. Den største av dem kalles <strong>største felles
+            faktor</strong> (SFF) for \(a\) og \(b\), og skrives
+            \(\operatorname{SFF}(a,b)\).
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 3.2">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            4620 &= 2\cdot2\cdot3\cdot5\cdot7\cdot11\\
+            7150 &= 2\cdot5\cdot5\cdot11\cdot13
+            \end{aligned}
+            $$
+          </div>
+          <p>
+            Siden \(2\), \(5\) og \(11\) finnes i begge
+            primtallsfaktoriseringene, er begge tallene delelige med
+            \(2\cdot5\cdot11\), og dette er den største mulige felles faktoren.
+          </p>
+          <div class="math-display">
+            $$ \operatorname{SFF}(4620,7150)=2\cdot5\cdot11=110 $$
+          </div>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å forkorte en brøk så mye som mulig, deler vi teller og nevner
+            med deres største felles faktor. Vi kan gjøre dette ved å
+            primtallsfaktorisere teller og nevner som ovenfor og deretter
+            stryke faktorene de har felles.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 3.3">
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            \dfrac{4620}{7150}
+            &=
+            \dfrac{2\cdot2\cdot3\cdot5\cdot7\cdot11}
+                  {2\cdot5\cdot5\cdot11\cdot13}\\
+            &=
+            \dfrac{2\cdot3\cdot7}{5\cdot13}\\
+            &=
+            \dfrac{42}{65}
+            \end{aligned}
+            $$
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
