@@ -109,9 +109,9 @@ h2 {
 }
 
 h2 u {
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 0.18em;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1.5px solid var(--accent);
 }
 
 h3 {
@@ -205,12 +205,9 @@ img {
   position: absolute;
   top: 0;
   right: 15mm;
-
   padding: 0 2mm;
   transform: translateY(-50%);
-
   color: var(--block-label);
-
   background: linear-gradient(
     to bottom,
     var(--paper) 0 50%,
@@ -237,15 +234,12 @@ img {
 
 .example::before {
   content: "Eksempel";
-
   position: absolute;
   left: 10mm;
   top: 0;
   transform: translate(-50%, -55%);
-
   padding: 0 2mm;
   background: var(--paper);
-
   color: var(--muted);
   font-style: italic;
   font-weight: 600;
@@ -324,12 +318,6 @@ th {
   font-weight: 700;
 }
 
-/*
- * Les tableaux de conversion d'aires et de volumes utilisent des grilles
- * internes pour subdiviser chaque unité en 2 ou 3 positions. Les cellules
- * internes doivent s'étirer sur toute la hauteur de la ligne ; le contenu,
- * lui, reste centré.
- */
 table[aria-label*="Omregning"]
   td[style*="padding: 0"]
   > div[style*="grid-template-columns"]
