@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <title>Funksjoner</title>
+
+    <!-- KaTeX : bare det som trengs for å skrive matematikk med LaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Funksjoner</h1>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">1.</span>
+            <u>Generelt og begreper</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              En funksjon er en regel som gjør om et tall til et annet tall.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.1">
+          <p>
+            Kvadratrotknappen på kalkulatoren fungerer som en funksjon.
+            Den gjør for eksempel \(9\) om til \(3\) og \(49\) om til \(7\).
+          </p>
+          <p>
+            Et regneprogram, for eksempel et vi lager i Scratch, er også en
+            funksjon.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.2">
+          <p>La oss se på dette regneprogrammet:</p>
+          <ol>
+            <li>Velg et tall.</li>
+            <li>Opphøy tallet i andre.</li>
+            <li>Trekk fra \(9\).</li>
+            <li>Ta kvadratroten av resultatet.</li>
+          </ol>
+          <p>
+            Dette er en funksjon som vi kan kalle \(f\). Vi skriver:
+          </p>
+          <div class="math-display">
+            $$ f(x)=\sqrt{x^2-9} $$
+          </div>
+          <p>
+            Det leses slik: Når vi setter inn et tall \(x\) i funksjonen \(f\),
+            får vi \(\sqrt{x^2-9}\).
+          </p>
+        </div>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Tallene vi starter med, kalles <strong>x-verdier</strong>.
+            Tallene vi får som resultat, kalles
+            <strong>funksjonsverdier</strong>. Vi kan vise det med denne
+            enkle tegningen:
+          </p>
+          <div class="math-display">
+            $$
+            \underbrace{x}_{\text{x-verdi}}
+            \xrightarrow{\quad f\quad}
+            \underbrace{f(x)}_{\text{funksjonsverdi}}
+            $$
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.3">
+          <p>
+            Vi bruker igjen funksjonen \(f(x)=\sqrt{x^2-9}\).
+            For å finne funksjonsverdien når \(x=5\), setter vi inn \(5\)
+            i stedet for \(x\):
+          </p>
+          <div class="math-display">
+            $$
+            f(5)=\sqrt{5^2-9}=\sqrt{25-9}=\sqrt{16}=4
+            $$
+          </div>
+          <p>
+            Funksjonsverdien når \(x=5\), er altså \(4\).
+            Vi kan også si at \(5\) er en x-verdi som gir funksjonsverdien \(4\).
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Én x-verdi kan bare gi én funksjonsverdi. Men flere forskjellige
+            x-verdier kan gi samme funksjonsverdi!
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.4">
+          <p>
+            Med \(f(x)=\sqrt{x^2-9}\) har vi allerede sett at \(f(5)=4\).
+            Men vi har også:
+          </p>
+          <div class="math-display">
+            $$
+            f(-5)=\sqrt{(-5)^2-9}=\sqrt{25-9}=\sqrt{16}=4
+            $$
+          </div>
+          <p>
+            Funksjonsverdien \(4\) kan altså komme fra to x-verdier:
+            \(-5\) og \(5\).
+          </p>
+        </div>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Noen funksjoner kan ikke brukes på alle tall.
+            Alle tallene vi kan sette inn i en funksjon, utgjør funksjonens
+            <strong>definisjonsmengde</strong>.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.5">
+          <p>
+            Hvis \(g(x)=\dfrac{1}{x}\), kan vi ikke regne ut funksjonsverdien
+            når \(x=0\), for da ville vi fått \(\dfrac{1}{0}\), som ikke
+            finnes. Vi sier at \(g\) ikke er definert for \(x=0\).
+          </p>
+          <p>
+            Hvis \(h(x)=\sqrt{x}\), kan vi ikke finne funksjonsverdien
+            for negative tall. Definisjonsmengden er derfor alle tall som
+            er større enn eller lik \(0\).
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            For å få oversikt over en funksjon kan vi samle x-verdier
+            og funksjonsverdier i en tabell.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.6">
+          <p>
+            Vi tar en enkel funksjon: \(f(x)=2x-5\).
+            Da kan vi lage denne tabellen:
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>x-verdi</th>
+                  <th>\(-3\)</th>
+                  <th>\(-1\)</th>
+                  <th>\(0\)</th>
+                  <th>\(3\)</th>
+                  <th>\(5\)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>f(x)-verdi</th>
+                  <td>\(-11\)</td>
+                  <td>\(-7\)</td>
+                  <td>\(-5\)</td>
+                  <td>\(1\)</td>
+                  <td>\(5\)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Legg merke til at dette ikke er en proporsjonalitetstabell.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">2.</span>
+            <u>Grafer</u>
+          </h2>
+
+          <div class="remark" data-label="Merk">
+            <p>
+              En verditabell har fort sine begrensninger, siden vi ikke kan
+              ta med så mange verdier. Derfor er det ofte bedre å tegne en
+              graf. Grafer kan se veldig forskjellige ut: rette linjer,
+              parabler, hyperbler og mye annet.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.1">
+          <p>
+            Under har vi tegnet grafen til funksjonen \(f(x)=\sqrt{x}\).
+            Vi har brukt noen enkle punkter:
+            \(\sqrt{0}=0\), \(\sqrt{1}=1\), \(\sqrt{4}=2\)
+            og \(\sqrt{9}=3\).
+          </p>
+          <img
+            src="./assets/sqrt-function.svg"
+            alt="Grafen til f(x) = kvadratroten av x, med abscisser (x-verdier) og ordinater (f(x)-verdier)"
+            style="width: 100%; max-width: 680px"
+          />
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å finne funksjonsverdien for et tall på en graf, finner vi
+            tallet på x-aksen og ser hvilken y-verdi grafen har der.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.2">
+          <p>
+            På grafen over kan vi se at funksjonsverdien når \(x=6\),
+            altså \(\sqrt{6}\), er omtrent \(2{,}4\).
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.3">
+          <p>
+            Her har vi tegnet grafen til funksjonen \(g(x)=x^2\).
+          </p>
+          <img
+            src="./assets/quadratic-function.svg"
+            alt="Parabelen til g(x) = x i andre, med abscisser (x-verdier) og ordinater (f(x)-verdier)"
+            style="width: 100%; max-width: 480px"
+          />
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å finne hvilken eller hvilke x-verdier som gir en bestemt
+            funksjonsverdi, finner vi først funksjonsverdien på y-aksen.
+            Deretter ser vi hvor grafen har denne høyden, og leser av
+            de tilhørende x-verdiene.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.4">
+          <p>
+            På grafen over ser vi at funksjonsverdien \(6\) kommer fra
+            to x-verdier: omtrent \(-2{,}4\) og \(2{,}4\).
+            Funksjonsverdien \(-1\) kommer derimot ikke fra noen x-verdi.
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Vi ser igjen på grafene at én x-verdi ikke kan gi mer enn én
+            funksjonsverdi, mens samme funksjonsverdi godt kan komme fra
+            flere x-verdier.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
