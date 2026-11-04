@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <title>Sannsynlighet</title>
+
+    <!-- KaTeX : bare det som trengs for å skrive matematikk med LaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Sannsynlighet</h1>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">1.</span>
+            <u>Definisjon og egenskaper</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              Sannsynligheten for en hendelse \(A\), skrevet \(p(A)\), er andelen
+              ganger \(A\) skjer dersom vi gjentar et forsøk veldig mange ganger.
+            </p>
+          </div>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å finne sannsynligheten for en hendelse deler vi antall gunstige
+            utfall på antall mulige utfall.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.1">
+          <p>Vi kaster en terning med seks sider.</p>
+          <ul>
+            <li>
+              Sannsynligheten for å få en sekser er \(\dfrac{1}{6}\). Vi har ett
+              gunstig utfall (siden med 6) og seks mulige utfall (de seks
+              sidene på terningen).
+            </li>
+            <li>
+              Sannsynligheten for å få et partall er
+              \(\dfrac{3}{6}=\dfrac{1}{2}\). Vi har tre gunstige utfall
+              (2, 4 og 6) og seks mulige utfall.
+            </li>
+          </ul>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            I definisjonen står det «hvis vi gjentar et forsøk veldig mange
+            ganger». Strengt tatt blir sannsynligheten for en hendelse \(A\)
+            helt nøyaktig først hvis vi gjentar forsøket uendelig mange ganger.
+            Men det er ikke så lett å få til i praksis …
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.2">
+          <p>
+            Når jeg kaster terningen min, er det klart at jeg har én sjanse av
+            seks til å få en sekser. Men hvis jeg bare kaster noen få ganger,
+            kan resultatet bli annerledes. Jeg kan for eksempel kaste terningen
+            to ganger på rad og få en sekser begge gangene.
+          </p>
+        </div>
+
+        <div class="definition" data-label="Definisjoner">
+          <p>
+            Vi sier at en hendelse er <strong>sikker</strong> hvis den helt
+            sikkert skjer.
+          </p>
+          <p>
+            Vi sier at en hendelse er <strong>umulig</strong> hvis den aldri
+            skjer.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.3">
+          <p>Med en vanlig terning med seks sider:</p>
+          <ul>
+            <li>
+              Å få et helt tall er en sikker hendelse (det står ingen
+              desimaltall på terningen).
+            </li>
+            <li>Å få en sjuer er en umulig hendelse.</li>
+          </ul>
+        </div>
+
+        <div class="definition" data-label="Egenskaper">
+          <p>
+            Sannsynligheten for en sikker hendelse er \(1\), og
+            sannsynligheten for en umulig hendelse er \(0\).
+            Sannsynligheten for alle andre hendelser ligger mellom \(0\) og \(1\).
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">2.</span>
+            <u>Uforenlige og motsatte hendelser</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>
+              To hendelser \(A\) og \(B\) er <strong>uforenlige</strong>
+              hvis de ikke kan skje samtidig.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.1">
+          <p>
+            På en terning med seks sider er hendelsene «å få et oddetall»
+            og «å få en sekser» uforenlige. Derimot er hendelsene
+            «å få tre eller mindre» og «å få en ener» ikke uforenlige.
+          </p>
+        </div>
+
+        <div class="definition" data-label="Definisjon">
+          <p>
+            Den <strong>motsatte hendelsen</strong> til en hendelse \(A\)
+            skjer når \(A\) ikke skjer. Vi skriver «ikke \(A\)» eller
+            \(\overline{A}\) (leses «A med strek over»).
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.2">
+          <p>
+            La \(A\) være hendelsen «å få tre eller mer» når vi kaster en
+            terning med seks sider. Den motsatte hendelsen \(\overline{A}\)
+            er da «å få to eller mindre».
+          </p>
+        </div>
+
+        <div class="definition" data-label="Egenskap">
+          <p>Hvis hendelsene \(A\) og \(B\) er uforenlige, gjelder:</p>
+          <div class="math-display">
+            $$ p(A\text{ eller }B)=p(A)+p(B) $$
+          </div>
+        </div>
+
+        <div class="definition" data-label="Egenskap">
+          <p>
+            Når vi kjenner \(p(A)\), kan vi finne sannsynligheten for den
+            motsatte hendelsen:
+          </p>
+          <div class="math-display">
+            $$ p(\overline{A})=1-p(A) $$
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.3">
+          <p>
+            Vi ser på en forenklet værmelding for neste dag.
+            Vi antar at det bare finnes tre muligheter:
+          </p>
+          <ul>
+            <li>\(B\): Det blir fint vær uten skyer.</li>
+            <li>\(S\): Det blir overskyet og tørt.</li>
+            <li>\(P\): Det blir overskyet med regn.</li>
+          </ul>
+          <p>
+            Vi antar at været ikke endrer seg i løpet av dagen. Dermed er
+            disse tre hendelsene uavhengige av hverandre.
+          </p>
+          <p>
+            Vi får oppgitt \(p(B)=60\%\), \(p(S)=30\%\) og \(p(P)=10\%\).
+            Vi kan regne ut:
+          </p>
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            p(\text{overskyet})
+            &=p(S\text{ eller }P)=p(S)+p(P)\\[0.7em]
+            &=30\%+10\%=40\%
+            \end{aligned}
+            $$
+          </div>
+          <div class="math-display">
+            $$
+            \begin{aligned}
+            p(\text{oppholdsvær})
+            &=p(\overline{P})=1-p(P)\\[0.7em]
+            &=100\%-10\%=90\%
+            \end{aligned}
+            $$
+          </div>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Motsatte hendelser er uforenlige. Derfor har vi:
+          </p>
+          <div class="math-display">
+            $$ p(A\text{ eller }\overline{A})=p(A)+p(\overline{A}) $$
+          </div>
+          <p>
+            Men det er klart at «\(A\) eller \(\overline{A}\)» er en sikker
+            hendelse: Hvis \(A\) ikke skjer, må den motsatte hendelsen skje.
+            Dermed har vi:
+          </p>
+          <div class="math-display">
+            $$ p(A\text{ eller }\overline{A})=1 $$
+          </div>
+          <p>Vi får derfor:</p>
+          <div class="math-display">
+            $$ p(A)+p(\overline{A})=1 $$
+          </div>
+          <div class="math-display">
+            $$ p(\overline{A})=1-p(A) $$
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">3.</span>
+            <u>Sannsynlighetstrær</u>
+          </h2>
+
+          <div class="method" data-label="Metode">
+            <p>
+              Når flere hendelser følger etter hverandre, kan et tre som viser
+              alle mulige utfall gjøre det lettere å se hva som kan skje.
+            </p>
+          </div>
+        </div>
+
+        <div class="example" data-label="Eksempel 3.1">
+          <p>En urne inneholder:</p>
+          <ul>
+            <li>6 røde kuler</li>
+            <li>3 grønne kuler</li>
+            <li>5 blå kuler</li>
+          </ul>
+          <p>Vi bruker disse bokstavene:</p>
+          <ul>
+            <li>\(R\): «å trekke en rød kule»</li>
+            <li>\(V\): «å trekke en grønn kule»</li>
+            <li>\(B\): «å trekke en blå kule»</li>
+          </ul>
+          <p>
+            Vi trekker to kuler etter hverandre <strong>med tilbakelegging</strong>.
+            Det betyr at vi legger den første kulen tilbake i urnen før vi
+            trekker den andre.
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Summen av sannsynlighetene for alle grenene som går ut fra samme
+            punkt i et sannsynlighetstre, er \(1\).
+          </p>
+        </div>
+
+        <div class="definition" data-label="Egenskap">
+          <p>
+            Sannsynligheten for en hendelse som skjer gjennom to forsøk, er
+            produktet av sannsynlighetene for hvert forsøk.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 3.2">
+          <p>
+            Vi bruker den samme urnen og de samme kulene som i forrige
+            eksempel. Denne gangen trekker vi to kuler etter hverandre
+            <strong>uten tilbakelegging</strong>.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
