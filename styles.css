@@ -547,6 +547,112 @@ table[aria-label*="Omregning"]
     break-after: avoid-page;
     page-break-after: avoid;
   }
+
+  /*
+   * Impression compacte (80 %).
+   * Ne change ni les marges du papier ni les règles de saut de page.
+   * La présentation à l'écran reste inchangée.
+   */
+  html {
+    font-size: 12.8px;
+  }
+
+  h1 {
+    font-size: 20.8pt;
+    margin-bottom: 8mm;
+    padding-bottom: 2mm;
+  }
+
+  h2 {
+    font-size: 13.6pt;
+    margin: 7.2mm 0 4mm;
+  }
+
+  h3 {
+    font-size: 10.4pt;
+    margin: 4.8mm 0 2.4mm;
+  }
+
+  .section-number {
+    min-width: 6.4mm;
+    height: 6.4mm;
+    margin-right: 1.6mm;
+    font-size: 8.8pt;
+  }
+
+  h2 u {
+    padding-bottom: 2.4px;
+  }
+
+  p {
+    margin-bottom: 2.4mm;
+  }
+
+  .course {
+    --print-label-safe: 2.4mm;
+    margin: 3.2mm 0;
+  }
+
+  .definition,
+  .method,
+  .remark {
+    margin: 4mm 0;
+    padding: 4mm 4mm 3.6mm;
+    margin-top: calc(4mm - var(--print-label-safe));
+    padding-top: calc(4mm + var(--print-label-safe));
+    border-radius: 2.4mm;
+  }
+
+  .definition::before,
+  .method::before,
+  .remark::before {
+    right: 12mm;
+    padding: 0 1.6mm;
+  }
+
+  .definition::after,
+  .method::after,
+  .remark::after {
+    border-radius: 2.4mm;
+  }
+
+  .example {
+    margin: 4.8mm 0;
+    padding: 4.8mm 0 3.2mm 14.4mm;
+    margin-top: calc(4.8mm - var(--print-label-safe));
+    padding-top: calc(4.8mm + var(--print-label-safe));
+  }
+
+  .example::before {
+    left: 8mm;
+    padding: 0 1.6mm;
+  }
+
+  .example::after {
+    left: 8mm;
+    top: calc(3.2mm + var(--print-label-safe));
+    width: 8mm;
+    border-bottom-left-radius: 2.4mm;
+  }
+
+  .math-display {
+    margin: 2.4mm 0;
+  }
+
+  .table-wrap {
+    margin: 4mm 0;
+  }
+
+  table {
+    margin-bottom: 2.4mm;
+  }
+
+  th,
+  td {
+    min-width: 12.8mm;
+    padding: 1.6mm 2.4mm;
+  }
+
 }
 
 /* ---------- Petit écran ---------- */
