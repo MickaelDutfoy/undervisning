@@ -6,7 +6,7 @@
     <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
     <title>Formler fra dagligliv og yrke</title>
 
-    <!-- KaTeX : uniquement ce qu'il faut pour écrire les maths en LaTeX -->
+    <!-- KaTeX for matematisk notasjon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
@@ -112,50 +112,25 @@
           </p>
 
           <p>
-            Vi bruker formelen for arealet av et rektangel: \(A = g \cdot h\).
+            Vi bruker formelen for arealet av et rektangel: \(A = l \cdot b\).
           </p>
 
           <p>
-            Her kjenner vi \(A = 50\,000\) og \(g = 200\), og vi skal finne
-            \(h\).
+            Her kjenner vi \(A = 50\,000\) og \(b = 200\), og vi skal finne
+            \(l\).
           </p>
 
           <div class="math-display">
-            $$ \begin{aligned} 50\,000 &= 200 \cdot h \\ h &=
-            \dfrac{50\,000}{200} \\ l &= 250 \end{aligned} $$
+            $$ \begin{aligned}
+            50\,000 &= l \cdot 200 \\[1em]
+            \textcolor{red}{\dfrac{\textcolor{black}{50\,000}}{200}}
+            &= \textcolor{red}{\dfrac{\textcolor{black}{l \cdot 200}}{200}} \\[1em]
+            \dfrac{50\,000}{200} &= l \\[1em]
+            250 &= l
+            \end{aligned} $$
           </div>
 
           <p>Beitet må derfor måle \(200\text{ m}\) ganger \(250\text{ m}\).</p>
-        </div>
-
-        <div class="remark" data-label="Merk">
-          <p>
-            Det er ikke nødvendig å lære alle variantene av den samme formelen
-            utenat. Det viktigste er å kunne finne dem igjen.
-          </p>
-        </div>
-
-        <div class="example" data-label="Eksempel 1.4">
-          <p>
-            Gjennomsnittsfarten er \(v = \dfrac{s}{t}\). Vi kan skrive formelen
-            som to likeverdige brøker for å bruke kryssmultiplikasjon:
-          </p>
-
-          <div class="math-display">
-            $$ \begin{aligned} \dfrac{v}{1} = \dfrac{s}{t} \end{aligned} $$
-          </div>
-
-          <p>Da kan vi finne:</p>
-
-          <div class="math-display">
-            $$ \begin{aligned} s = \dfrac{v \cdot t}{1} = v \cdot t
-            \end{aligned} $$
-          </div>
-
-          <div class="math-display">
-            $$ \begin{aligned} t = \dfrac{s \cdot 1}{v} = \dfrac{s}{v}
-            \end{aligned} $$
-          </div>
         </div>
       </section>
 
@@ -204,7 +179,7 @@
 
           <p>
             For rektangelet trenger vi ikke å lære en formel som \(O = 2 \cdot
-            g+2 \cdot h\) utenat: Vi kan finne formelen direkte ved å addere
+            l+2 \cdot b\) utenat: Vi kan finne formelen direkte ved å addere
             sidene.
           </p>
         </div>
@@ -222,7 +197,7 @@
             regel, gjør det mulig å skrive en generell formel. Da kan vi
             beskrive sammenhengen for alle mulige verdier og gjøre beregninger
             enklere. Det er akkurat det samme prinsippet som i en formel som \(A
-            = g \cdot h\): Vi trenger ikke å finne opp formelen på nytt for
+            = l \cdot b\): Vi trenger ikke å finne opp formelen på nytt for
             hvert nytt rektangel.
           </p>
         </div>
@@ -291,6 +266,69 @@
           </p>
 
           <p>Vi kan skrive formelen slik: \(P = 180 + 2x\).</p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Når vi har en formel, kan vi utlede andre varianter av den.
+            Hvis vi kan finne dem selv, trenger vi å lære færre formler utenat.
+            Da blir det også lettere å unngå å blande sammen formler som ligner på hverandre.
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 2.4">
+          <p>
+            Gjennomsnittsfarten er \(v = \dfrac{s}{t}\). Vi kan skrive formelen
+            som to likeverdige brøker for å bruke kryssmultiplikasjon:
+          </p>
+
+          <div class="math-display">
+            $$ \begin{aligned} \dfrac{v}{1} = \dfrac{s}{t} \end{aligned} $$
+          </div>
+
+          <p>Da kan vi finne:</p>
+
+          <div class="math-display">
+            $$ \begin{aligned} s = \dfrac{v \cdot t}{1} = v \cdot t
+            \end{aligned} $$
+          </div>
+
+          <div class="math-display">
+            $$ \begin{aligned} t = \dfrac{s \cdot 1}{v} = \dfrac{s}{v}
+            \end{aligned} $$
+          </div>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            Mer generelt kan vi omforme en formel ved å bruke den samme metoden
+            som når vi løser likninger.
+          </p>
+        </div>
+        <div class="example" data-label="Eksempel 2.5">
+          <p>
+            Formelen \(F = C \cdot 1{,}8 + 32\) gir temperaturen i grader
+            Fahrenheit (\(F\)) ut fra temperaturen i grader Celsius (\(C\)).
+            Når vi kjenner verdien til \(C\), kan vi altså finne den tilsvarende
+            verdien til \(F\).
+          </p>
+          <p>
+            Hvis vi i stedet vil ha en formel som gir \(C\) ut fra \(F\),
+            løser vi en likning der \(C\) er den ukjente.
+          </p>
+          <div class="math-display">
+            $$ \begin{aligned}
+            F &= C \cdot 1{,}8 + 32 \\[0.6em]
+            F \textcolor{red}{- 32} &= C \cdot 1{,}8 + 32 \textcolor{red}{- 32} \\[0.6em]
+            F - 32 &= C \cdot 1{,}8 \\[0.9em]
+            \textcolor{red}{\dfrac{\textcolor{black}{F - 32}}{1{,}8}}
+            &= \textcolor{red}{\dfrac{\textcolor{black}{C \cdot 1{,}8}}{1{,}8}} \\[0.9em]
+            \dfrac{F - 32}{1{,}8} &= C
+            \end{aligned} $$
+          </div>
+          <p>
+            Vi har dermed funnet formelen \(C = \dfrac{F - 32}{1{,}8}\).
+          </p>
         </div>
       </section>
     </main>
