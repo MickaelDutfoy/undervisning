@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <title>Geometri</title>
+
+    <!-- KaTeX for matematisk notasjon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css"
+      integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"
+      integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body)"
+    ></script>
+
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+
+  <body>
+    <main class="course">
+      <h1>Geometri</h1>
+
+      <section>
+        <div class="section-start">
+          <h2>
+            <span class="section-number">2.</span>
+            <u>Omkretsen</u>
+          </h2>
+
+          <div class="definition" data-label="Definisjon">
+            <p>Omkretsen til en figur er den totale lengden rundt figuren.</p>
+          </div>
+        </div>
+
+        <div class="method" data-label="Metode">
+          <p>
+            For å beregne omkretsen til en mangekant trenger vi bare å addere
+            lengdene av alle sidene.
+          </p>
+          <p>
+            Vi trenger altså ikke å lære formler utenat: Vi kan finne dem fram
+            selv!
+          </p>
+        </div>
+
+        <div class="example" data-label="Eksempel 1.1">
+          <p>
+            Vi har rektangelet ABCD og den uregelmessige femkanten EFGHI
+            nedenfor. Lengdene er oppgitt i centimeter.
+          </p>
+
+          <img
+            src="./assets/figure-1.png"
+            alt="Rektangel og femkant der vi skal beregne omkretsen"
+          />
+
+          <p>
+            Omkretsen til rektangelet er derfor \(O = 6+3+6+3=18\text{ cm}\).
+          </p>
+
+          <p>
+            Omkretsen til femkanten er \(O =
+            5{,}72+5{,}04+2{,}67+5{,}73+4{,}29=23{,}45\text{ cm}\).
+          </p>
+
+          <p>
+            For rektangelet trenger vi ikke å lære en formel som \(O = 2 \cdot
+            l+2 \cdot b\) utenat: Vi kan finne formelen direkte ved å addere
+            sidene.
+          </p>
+        </div>
+
+        <div class="remark" data-label="Merk">
+          <p>
+            Sirkelen er selvfølgelig et unntak. For å beregne omkretsen trenger
+            vi formelen \(O = 2 \cdot \pi \cdot r\).
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
