@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 165" role="img">
+<rect width="100%" height="100%" fill="#fff"/>
+<path d="M14 133 L306 133 L254 31 L110 31 Z" fill="none" stroke="#102575" stroke-width="3.2" stroke-linejoin="round"/>
+<path d="M110 31 V133" fill="none" stroke="#ef2828" stroke-width="2.3" stroke-dasharray="10 7"/>
+<path d="M110 111 H132 V133" fill="none" stroke="#ef2828" stroke-width="2.2"/>
+<text x="122" y="89" font-family="Arial, sans-serif" font-style="italic" font-size="23" fill="#182026">h</text>
+<text x="178" y="22" font-family="Arial, sans-serif" font-style="italic" font-size="23" fill="#182026">b</text>
+<text x="156" y="159" font-family="Arial, sans-serif" font-style="italic" font-size="23" fill="#182026">a</text>
+</svg>
